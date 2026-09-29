@@ -1,0 +1,61 @@
+Start SOLVER Tue 09/22/2026 14:29:57.34  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Warning: Numeric variable name in LP file ('0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\pontes_agg_028_1239_hard.lp
+Reading time = 0.09 seconds
+OBJ: 8669 rows, 14869 columns, 143464 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 8669 rows, 14869 columns and 143464 nonzeros
+Model fingerprint: 0x51db1298
+Variable types: 1 continuous, 14868 integer (14868 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+02]
+Presolve removed 1 rows and 1240 columns
+Presolve time: 0.24s
+Presolved: 8668 rows, 13629 columns, 133564 nonzeros
+Variable types: 0 continuous, 13629 integer (13629 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.02s
+
+Solved with dual simplex
+
+Root relaxation: infeasible, 3186 iterations, 0.33 seconds (0.25 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (3186 simplex iterations) in 0.66 seconds (0.60 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+

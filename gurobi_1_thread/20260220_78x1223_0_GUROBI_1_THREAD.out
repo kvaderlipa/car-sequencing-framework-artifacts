@@ -1,0 +1,47 @@
+Set parameter TimeLimit to value 10800
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file 20260220_78x1223_0.lp
+Reading time = 0.75 seconds
+: 7693 rows, 95394 columns, 1334160 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 7693 rows, 95394 columns and 1334160 nonzeros
+Model fingerprint: 0xba14abe0
+Variable types: 0 continuous, 95394 integer (95394 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+Presolve removed 278 rows and 1434 columns
+Presolve time: 2.55s
+Presolved: 7415 rows, 93960 columns, 1326107 nonzeros
+Variable types: 0 continuous, 93960 integer (93960 binary)
+
+Root relaxation: objective 0.000000e+00, 4312 iterations, 1.71 seconds (1.57 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -    4s
+     0     0    0.00000    0  147    0.00000    0.00000  0.00%     -    4s
+
+Explored 1 nodes (4312 simplex iterations) in 4.69 seconds (5.47 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file '20260220_78x1223_0_GUROBI_1_THREAD.sol'
+

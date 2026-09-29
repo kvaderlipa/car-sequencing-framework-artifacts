@@ -1,0 +1,123 @@
+Start SOLVER Fri 09/18/2026 20:06:07.67  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Warning: Numeric variable name in LP file ('0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\carseq_100_8_20_99_hard.lp
+Reading time = 0.03 seconds
+OBJ: 901 rows, 2001 columns, 18242 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 901 rows, 2001 columns and 18242 nonzeros
+Model fingerprint: 0xb7fd2b23
+Variable types: 1 continuous, 2000 integer (2000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+00]
+Presolve removed 0 rows and 1 columns
+Presolve time: 0.04s
+Presolved: 901 rows, 2000 columns, 18242 nonzeros
+Variable types: 0 continuous, 2000 integer (2000 binary)
+
+Root relaxation: objective 0.000000e+00, 1646 iterations, 0.13 seconds (0.13 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  391          -    0.00000      -     -    0s
+     0     0    0.00000    0  454          -    0.00000      -     -    1s
+     0     0    0.00000    0  421          -    0.00000      -     -    1s
+     0     0    0.00000    0  292          -    0.00000      -     -    2s
+     0     0    0.00000    0  282          -    0.00000      -     -    2s
+     0     0    0.00000    0  197          -    0.00000      -     -    3s
+     0     0    0.00000    0  365          -    0.00000      -     -    3s
+     0     0    0.00000    0  165          -    0.00000      -     -    4s
+     0     0    0.00000    0  305          -    0.00000      -     -    4s
+     0     0    0.00000    0  175          -    0.00000      -     -    5s
+     0     0    0.00000    0  230          -    0.00000      -     -    5s
+     0     0    0.00000    0  217          -    0.00000      -     -    6s
+     0     0    0.00000    0  217          -    0.00000      -     -    6s
+     0     2    0.00000    0  217          -    0.00000      -     -   34s
+    15    24    0.00000    4  303          -    0.00000      -  1155   35s
+   422   252 infeasible   21               -    0.00000      -   517   41s
+   969   298    0.00000   32  133          -    0.00000      -   450   45s
+  2306   347    0.00000   29  221          -    0.00000      -   357   51s
+  3119   371    0.00000   22  192          -    0.00000      -   351   56s
+  3529   375 infeasible   30               -    0.00000      -   351   60s
+  4551   379    0.00000   26  219          -    0.00000      -   344   65s
+  5632   410 infeasible   37               -    0.00000      -   341   72s
+  6303   393 infeasible   44               -    0.00000      -   337   76s
+  7379   414 infeasible   31               -    0.00000      -   341   83s
+  7838   440    0.00000   31  197          -    0.00000      -   347  100s
+  8247   462    0.00000   30  186          -    0.00000      -   352  105s
+  8834   466    0.00000    6  232          -    0.00000      -   356  110s
+  8840   470    0.00000   32  164          -    0.00000      -   356  115s
+  8848   476    0.00000   29  238          -    0.00000      -   356  120s
+  8852   478    0.00000   11  175          -    0.00000      -   355  140s
+  8979   548    0.00000   26  324          -    0.00000      -  19.8  145s
+  9420   464 infeasible   40               -    0.00000      -  41.2  152s
+  9935   291    0.00000   34  216          -    0.00000      -  55.4  156s
+ 10640   188 infeasible   56               -    0.00000      -  76.6  162s
+ 11017   217    0.00000   33  226          -    0.00000      -  91.7  167s
+ 11206   208 infeasible   38               -    0.00000      -  99.1  170s
+ 11675   231    0.00000   45  215          -    0.00000      -   117  177s
+ 11966   241    0.00000   40  186          -    0.00000      -   126  180s
+ 12624   251 infeasible   47               -    0.00000      -   143  187s
+ 12950   267 infeasible   43               -    0.00000      -   152  191s
+ 13302   277    0.00000   45  212          -    0.00000      -   161  195s
+ 14087   301    0.00000   49  171          -    0.00000      -   181  204s
+ 14550   279 infeasible   58               -    0.00000      -   191  209s
+ 15090   281    0.00000   47  162          -    0.00000      -   200  214s
+ 15535   268    0.00000   53  139          -    0.00000      -   210  218s
+ 16062   263 infeasible   54               -    0.00000      -   219  223s
+ 16644   269 infeasible   53               -    0.00000      -   227  230s
+ 17138   249 infeasible   32               -    0.00000      -   236  236s
+ 17830   259 infeasible   57               -    0.00000      -   244  242s
+ 18462   230 infeasible   53               -    0.00000      -   252  248s
+ 19153   255    0.00000   43  168          -    0.00000      -   259  254s
+ 19933   262    0.00000   35  244          -    0.00000      -   263  260s
+ 20864   289    0.00000   30  215          -    0.00000      -   266  267s
+ 21731   290 infeasible   45               -    0.00000      -   270  275s
+ 22621   301 infeasible   49               -    0.00000      -   275  284s
+ 23546   292    0.00000   43  236          -    0.00000      -   278  299s
+ 24268   295    0.00000   52  185          -    0.00000      -   280  308s
+ 25467   325    0.00000   46  236          -    0.00000      -   283  315s
+ 26638   321    0.00000   56  181          -    0.00000      -   287  323s
+ 27461   306    0.00000   49  228          -    0.00000      -   290  331s
+ 28878   289 infeasible   48               -    0.00000      -   293  339s
+ 30195   300 infeasible   68               -    0.00000      -   295  347s
+ 31602   284 infeasible   57               -    0.00000      -   297  355s
+ 33136   266    0.00000   55  185          -    0.00000      -   297  363s
+ 34682   238    0.00000   52  186          -    0.00000      -   297  369s
+ 36090   259    0.00000   51  276          -    0.00000      -   297  377s
+H37335   259                       0.0000000    0.00000  0.00%   297  421s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 2
+  Clique: 226
+  MIR: 3
+  Flow cover: 12
+  Zero half: 15
+
+Explored 37335 nodes (14297574 simplex iterations) in 421.08 seconds (515.22 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\carseq_100_8_20_99_hard.sol'
+

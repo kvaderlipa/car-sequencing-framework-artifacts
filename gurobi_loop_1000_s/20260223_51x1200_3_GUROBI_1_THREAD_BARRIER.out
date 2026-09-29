@@ -1,0 +1,1444 @@
+Start SOLVER Sat 04/04/2026  4:07:41.25  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.51 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0x36cfd4b4
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.43s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.03s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     4s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     4s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     5s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     5s
+
+Barrier solved model in 10 iterations and 4.64 seconds (4.37 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 7s
+       0 DPushes remaining with DInf 0.0000000e+00                 7s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 7s
+       0 PPushes remaining with PInf 0.0000000e+00                 7s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      7s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 3.99 seconds (2.84 work units)
+Total elapsed time = 18.64s (DegenMoves)
+Total elapsed time = 25.42s (DegenMoves)
+Total elapsed time = 31.94s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621          -    0.00000      -     -   36s
+     0     0    0.00000    0 3020          -    0.00000      -     -   54s
+     0     0    0.00000    0 3188          -    0.00000      -     -   72s
+     0     0    0.00000    0 2825          -    0.00000      -     -  148s
+     0     0    0.00000    0 3202          -    0.00000      -     -  168s
+     0     0    0.00000    0 2913          -    0.00000      -     -  245s
+     0     0    0.00000    0 3246          -    0.00000      -     -  265s
+     0     0    0.00000    0 2976          -    0.00000      -     -  340s
+     0     0    0.00000    0 2883          -    0.00000      -     -  392s
+H    0     0                    1032.0000000    0.00000   100%     -  413s
+H    0     0                     487.0000000    0.00000   100%     -  437s
+H    0     0                     456.0000000    0.00000   100%     -  452s
+H    0     0                     428.0000000    0.00000   100%     -  562s
+     0     2    0.00000    0 2812  428.00000    0.00000   100%     -  562s
+     1     3    0.00000    1 2711  428.00000    0.00000   100% 76127  573s
+     2     4    0.00000    2 2654  428.00000    0.00000   100% 41076  583s
+     3     5    0.00000    3 2643  428.00000    0.00000   100% 28687  599s
+     4     6    0.32142    3 2713  428.00000    0.00000   100% 30022  638s
+     5     7    0.00000    4 2626  428.00000    0.00000   100% 25285  648s
+     6     8    0.00000    5 2627  428.00000    0.00000   100% 21850  671s
+     7     9    0.00000    6 2619  428.00000    0.00000   100% 19465  680s
+     8    10    0.32634    6 2679  428.00000    0.00000   100% 24782  779s
+H    9     9                     361.0000000    0.00000   100% 22029  801s
+    10    12    0.00000    8 2631  361.00000    0.00000   100% 21605  820s
+    11    13    0.37080    9 2555  361.00000    0.00000   100% 22705  850s
+    12    14    0.00000    9 2626  361.00000    0.00000   100% 21925  869s
+    13    15    0.59208   10 2710  361.00000    0.00000   100% 23371  912s
+    14    16    0.00000   10 2624  361.00000    0.00000   100% 22746  939s
+    15    17    0.00000   11 2624  361.00000    0.00000   100% 22086  957s
+    16    18    0.00000   12 2628  361.00000    0.00000   100% 20871  986s
+
+Cutting planes:
+  Cover: 2
+  MIR: 4
+  StrongCG: 1
+  GUB cover: 586
+  Zero half: 29
+  RLT: 2
+
+Explored 17 nodes (691306 simplex iterations) in 1000.05 seconds (899.67 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 5: 361 428 456 ... 1032
+
+Time limit reached
+Best objective 3.610000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_1_BARRIER.sol'
+
+Start SOLVER Sat 04/04/2026  4:24:22.15  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.48 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+Read solution from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_1_BARRIER.sol
+Read input file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_1_BARRIER.sol'
+
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0x2d589556
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded user MIP start with objective 361
+
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.41s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.03s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     3s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     3s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     4s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     4s
+
+Barrier solved model in 10 iterations and 4.31 seconds (4.17 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 6s
+       0 DPushes remaining with DInf 0.0000000e+00                 6s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 6s
+       0 PPushes remaining with PInf 0.0000000e+00                 6s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      6s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      6s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 3.96 seconds (2.84 work units)
+Total elapsed time = 18.75s (DegenMoves)
+Total elapsed time = 25.65s (DegenMoves)
+Total elapsed time = 31.76s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621  361.00000    0.00000   100%     -   36s
+H    0     0                     350.0000000    0.00000   100%     -   51s
+     0     0    0.00000    0 2963  350.00000    0.00000   100%     -   70s
+H    0     0                     330.0000000    0.00000   100%     -   72s
+     0     0    0.00000    0 3206  330.00000    0.00000   100%     -   87s
+     0     0    0.00000    0 2933  330.00000    0.00000   100%     -  167s
+H    0     0                     324.0000000    0.00000   100%     -  183s
+     0     0    0.00000    0 3201  324.00000    0.00000   100%     -  204s
+     0     0    0.00000    0 2982  324.00000    0.00000   100%     -  276s
+H    0     0                     309.0000000    0.00000   100%     -  277s
+     0     0    0.00000    0 3265  309.00000    0.00000   100%     -  295s
+     0     0    0.00000    0 3052  309.00000    0.00000   100%     -  369s
+     0     0    0.00000    0 2920  309.00000    0.00000   100%     -  421s
+H    0     0                     302.0000000    0.00000   100%     -  437s
+H    0     0                     299.0000000    0.00000   100%     -  443s
+H    0     0                     292.0000000    0.00000   100%     -  461s
+H    0     0                     286.0000000    0.00000   100%     -  572s
+     0     2    0.00000    0 2682  286.00000    0.00000   100%     -  572s
+     1     3    0.00000    1 2678  286.00000    0.00000   100% 65442  583s
+     2     4    0.42785    1 2531  286.00000    0.00000   100% 77497  693s
+     3     5    0.00000    2 2653  286.00000    0.00000   100% 54176  710s
+     4     6    0.56699    2 2800  286.00000    0.00000   100% 70003  862s
+     5     7    0.00000    3 2629  286.00000    0.00000   100% 56984  871s
+     6     8    0.39852    4 2537  286.00000    0.00000   100% 58818  959s
+     7     9    0.00000    4 2648  286.00000    0.00000   100% 51322  969s
+
+Cutting planes:
+  Cover: 10
+  MIR: 12
+  StrongCG: 1
+  GUB cover: 818
+  Zero half: 49
+  RLT: 9
+
+Explored 8 nodes (707603 simplex iterations) in 1000.02 seconds (935.59 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 9: 286 292 299 ... 361
+
+Time limit reached
+Best objective 2.860000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_2_BARRIER.sol'
+
+Start SOLVER Sat 04/04/2026  4:41:03.05  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.49 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+Read solution from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_2_BARRIER.sol
+Read input file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_2_BARRIER.sol'
+
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0x35a4ebb0
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded user MIP start with objective 286
+
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.42s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.03s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     3s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     3s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     4s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     4s
+
+Barrier solved model in 10 iterations and 4.38 seconds (4.17 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 7s
+       0 DPushes remaining with DInf 0.0000000e+00                 7s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 7s
+       0 PPushes remaining with PInf 0.0000000e+00                 7s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      7s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 4.11 seconds (2.84 work units)
+Total elapsed time = 18.52s (DegenMoves)
+Total elapsed time = 25.12s (DegenMoves)
+Total elapsed time = 31.40s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621  286.00000    0.00000   100%     -   36s
+H    0     0                     282.0000000    0.00000   100%     -   51s
+     0     0    0.00000    0 2946  282.00000    0.00000   100%     -   78s
+H    0     0                     281.0000000    0.00000   100%     -   79s
+     0     0    0.00000    0 3178  281.00000    0.00000   100%     -   93s
+     0     0    0.00000    0 2933  281.00000    0.00000   100%     -  169s
+H    0     0                     279.9999993    0.00000   100%     -  182s
+     0     0    0.00000    0 3243  280.00000    0.00000   100%     -  198s
+     0     0    0.00000    0 3023  280.00000    0.00000   100%     -  277s
+     0     0    0.00000    0 2909  280.00000    0.00000   100%     -  326s
+H    0     0                     279.0000000    0.00000   100%     -  341s
+     0     2    0.00000    0 2716  279.00000    0.00000   100%     -  453s
+     1     3    0.00000    1 2690  279.00000    0.00000   100% 77729  468s
+     2     4    0.45297    1 2807  279.00000    0.00000   100% 119907  653s
+     3     5    0.00000    2 2681  279.00000    0.00000   100% 81956  673s
+     4     6    0.35177    2 2707  279.00000    0.00000   100% 80501  776s
+     5     7    0.00000    3 2661  279.00000    0.00000   100% 65691  787s
+     6     8    0.32115    4 2698  279.00000    0.00000   100% 63038  846s
+     7     9    0.00000    4 2660  279.00000    0.00000   100% 55073  858s
+     8    10    0.00000    5 2625  279.00000    0.00000   100% 48918  887s
+H    9     9                     278.0000000    0.00000   100% 43483  898s
+     9    11    0.00000    6 2612  278.00000    0.00000   100% 44242  909s
+    10    12    0.36377    7 2589  278.00000    0.00000   100% 46413  984s
+    11    13    0.00000    7 2620  278.00000    0.00000   100% 42442  996s
+
+Cutting planes:
+  Cover: 66
+  MIR: 66
+  StrongCG: 26
+  GUB cover: 890
+  Zero half: 56
+  RLT: 25
+
+Explored 12 nodes (722175 simplex iterations) in 1000.05 seconds (930.69 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 6: 278 279 280 ... 286
+
+Time limit reached
+Best objective 2.780000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_3_BARRIER.sol'
+
+Start SOLVER Sat 04/04/2026  4:57:43.79  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.49 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+Read solution from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_3_BARRIER.sol
+Read input file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_3_BARRIER.sol'
+
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0x2f600e4b
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded user MIP start with objective 278
+
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.46s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.02s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     3s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     4s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     4s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     4s
+
+Barrier solved model in 10 iterations and 4.36 seconds (4.17 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 6s
+       0 DPushes remaining with DInf 0.0000000e+00                 6s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 6s
+       0 PPushes remaining with PInf 0.0000000e+00                 6s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      6s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      6s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 3.98 seconds (2.84 work units)
+Total elapsed time = 18.18s (DegenMoves)
+Total elapsed time = 25.13s (DegenMoves)
+Total elapsed time = 31.62s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621  278.00000    0.00000   100%     -   36s
+     0     0    0.00000    0 2981  278.00000    0.00000   100%     -   70s
+     0     0    0.00000    0 3189  278.00000    0.00000   100%     -   88s
+     0     0    0.00000    0 2982  278.00000    0.00000   100%     -  160s
+H    0     0                     274.0000000    0.00000   100%     -  170s
+     0     0    0.00000    0 3236  274.00000    0.00000   100%     -  188s
+     0     0    0.00000    0 2974  274.00000    0.00000   100%     -  266s
+H    0     0                     273.0000000    0.00000   100%     -  267s
+     0     0    0.00000    0 3287  273.00000    0.00000   100%     -  282s
+     0     0    0.00000    0 2994  273.00000    0.00000   100%     -  363s
+     0     0    0.00000    0 2929  273.00000    0.00000   100%     -  416s
+H    0     0                     269.0000000    0.00000   100%     -  435s
+H    0     0                     266.0000000    0.00000   100%     -  457s
+H    0     0                     263.0000000    0.00000   100%     -  560s
+     0     2    0.00000    0 2704  263.00000    0.00000   100%     -  560s
+     1     3    0.00000    1 2669  263.00000    0.00000   100% 71676  568s
+     2     4    0.40611    1 2581  263.00000    0.00000   100% 69506  649s
+     3     5    0.00000    2 2664  263.00000    0.00000   100% 48382  665s
+     4     6    0.61174    3 2773  263.00000    0.00000   100% 66546  817s
+     5     7    0.00000    3 2646  263.00000    0.00000   100% 54581  828s
+     6     8    0.00000    4 2656  263.00000    0.00000   100% 46588  844s
+     7     9    0.49294    4 2819  263.00000    0.00000   100% 57564  979s
+     8    10    0.00000    5 2640  263.00000    0.00000   100% 51034 1000s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 3
+  MIR: 6
+  GUB cover: 832
+  Zero half: 51
+  RLT: 2
+
+Explored 9 nodes (762404 simplex iterations) in 1000.03 seconds (929.40 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 6: 263 266 269 ... 278
+
+Time limit reached
+Best objective 2.630000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_4_BARRIER.sol'
+
+Start SOLVER Sat 04/04/2026  5:14:24.61  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.49 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+Read solution from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_4_BARRIER.sol
+Read input file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_4_BARRIER.sol'
+
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0x9b87b081
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded user MIP start with objective 263
+
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.42s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.03s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     3s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     3s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     4s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     4s
+
+Barrier solved model in 10 iterations and 4.31 seconds (4.17 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 6s
+       0 DPushes remaining with DInf 0.0000000e+00                 6s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 6s
+       0 PPushes remaining with PInf 0.0000000e+00                 6s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      6s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      6s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 3.95 seconds (2.84 work units)
+Total elapsed time = 18.03s (DegenMoves)
+Total elapsed time = 24.76s (DegenMoves)
+Total elapsed time = 27.86s (DegenMoves)
+Total elapsed time = 30.99s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621  263.00000    0.00000   100%     -   35s
+     0     0    0.00000    0 2968  263.00000    0.00000   100%     -   64s
+     0     0    0.00000    0 3215  263.00000    0.00000   100%     -   82s
+     0     0    0.00000    0 2984  263.00000    0.00000   100%     -  168s
+     0     0    0.00000    0 3231  263.00000    0.00000   100%     -  199s
+     0     0    0.00000    0 2802  263.00000    0.00000   100%     -  297s
+     0     0    0.00000    0 2695  263.00000    0.00000   100%     -  343s
+H    0     0                     261.0000000    0.00000   100%     -  357s
+     0     2    0.00000    0 2695  261.00000    0.00000   100%     -  413s
+     1     3    0.00000    1 2694  261.00000    0.00000   100% 52014  426s
+     2     4    0.54660    1 2797  261.00000    0.00000   100% 88771  591s
+     3     5    0.52053    2 2836  261.00000    0.00000   100% 109600  778s
+     4     6    0.00000    2 2691  261.00000    0.00000   100% 84049  789s
+     5     7    0.00000    3 2694  261.00000    0.00000   100% 68527  799s
+     6     8    0.54320    3 2868  261.00000    0.00000   100% 70193  886s
+
+Cutting planes:
+  Cover: 9
+  MIR: 12
+  StrongCG: 2
+  GUB cover: 639
+  Zero half: 43
+  RLT: 1
+
+Explored 7 nodes (720175 simplex iterations) in 1000.02 seconds (978.97 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 2: 261 263 
+
+Time limit reached
+Best objective 2.610000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_5_BARRIER.sol'
+
+Start SOLVER Sat 04/04/2026  5:31:05.56  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.56 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+Read solution from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_5_BARRIER.sol
+Read input file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_5_BARRIER.sol'
+
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0xeb715978
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded user MIP start with objective 261
+
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.59s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.02s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     4s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     4s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     4s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     5s
+
+Barrier solved model in 10 iterations and 4.54 seconds (4.17 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 7s
+       0 DPushes remaining with DInf 0.0000000e+00                 7s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 7s
+       0 PPushes remaining with PInf 0.0000000e+00                 7s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      7s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 4.09 seconds (2.84 work units)
+Total elapsed time = 18.53s (DegenMoves)
+Total elapsed time = 25.25s (DegenMoves)
+Total elapsed time = 31.63s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621  261.00000    0.00000   100%     -   36s
+     0     0    0.00000    0 2944  261.00000    0.00000   100%     -   72s
+     0     0    0.00000    0 3189  261.00000    0.00000   100%     -   88s
+     0     0    0.00000    0 2953  261.00000    0.00000   100%     -  164s
+     0     0    0.00000    0 3230  261.00000    0.00000   100%     -  193s
+     0     0    0.00000    0 3000  261.00000    0.00000   100%     -  278s
+     0     0    0.00000    0 3300  261.00000    0.00000   100%     -  298s
+     0     0    0.00000    0 3018  261.00000    0.00000   100%     -  379s
+     0     0    0.00000    0 2919  261.00000    0.00000   100%     -  430s
+H    0     0                     260.0000000    0.00000   100%     -  455s
+     0     2    0.00000    0 2723  260.00000    0.00000   100%     -  559s
+     1     3    0.00000    1 2677  260.00000    0.00000   100% 65663  568s
+     2     4    0.52053    1 2813  260.00000    0.00000   100% 82392  690s
+     3     5    0.00000    2 2641  260.00000    0.00000   100% 56867  706s
+     4     6    0.00000    3 2648  260.00000    0.00000   100% 44409  717s
+     5     7    0.38378    3 2597  260.00000    0.00000   100% 53580  823s
+     6     8    0.00000    4 2645  260.00000    0.00000   100% 45476  836s
+     7     9    0.00000    5 2627  260.00000    0.00000   100% 39920  847s
+     8    10    0.32524    5 2667  260.00000    0.00000   100% 44128  950s
+     9    11    0.00000    6 2636  260.00000    0.00000   100% 39924  973s
+    10    12    0.00000    7 2614  260.00000    0.00000   100% 37022  988s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 3
+  MIR: 11
+  StrongCG: 1
+  GUB cover: 799
+  Zero half: 40
+  RLT: 1
+
+Explored 11 nodes (733322 simplex iterations) in 1000.05 seconds (928.87 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 2: 260 261 
+
+Time limit reached
+Best objective 2.600000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_6_BARRIER.sol'
+
+Start SOLVER Sat 04/04/2026  5:47:46.53  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.54 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+Read solution from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_6_BARRIER.sol
+Read input file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_6_BARRIER.sol'
+
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0x28144ac9
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded user MIP start with objective 260
+
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.47s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.03s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     3s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     4s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     4s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     4s
+
+Barrier solved model in 10 iterations and 4.34 seconds (4.17 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 7s
+       0 DPushes remaining with DInf 0.0000000e+00                 7s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 7s
+       0 PPushes remaining with PInf 0.0000000e+00                 7s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      7s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 4.04 seconds (2.84 work units)
+Total elapsed time = 18.75s (DegenMoves)
+Total elapsed time = 26.08s (DegenMoves)
+Total elapsed time = 32.57s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621  260.00000    0.00000   100%     -   37s
+     0     0    0.00000    0 2948  260.00000    0.00000   100%     -   66s
+     0     0    0.00000    0 3184  260.00000    0.00000   100%     -   86s
+     0     0    0.00000    0 2897  260.00000    0.00000   100%     -  171s
+H    0     0                     259.0000000    0.00000   100%     -  182s
+     0     0    0.00000    0 3191  259.00000    0.00000   100%     -  197s
+     0     0    0.00000    0 2980  259.00000    0.00000   100%     -  268s
+     0     0    0.00000    0 2964  259.00000    0.00000   100%     -  318s
+H    0     0                     258.0000000    0.00000   100%     -  432s
+     0     2    0.00000    0 2716  258.00000    0.00000   100%     -  432s
+     1     3    0.35767    1 2658  258.00000    0.00000   100% 101709  482s
+     2     4    0.00000    1 2688  258.00000    0.00000   100% 53552  491s
+     3     5    0.00000    2 2658  258.00000    0.00000   100% 37372  505s
+     4     6    0.22502    2 2677  258.00000    0.00000   100% 38383  558s
+     5     7    0.39241    3 2589  258.00000    0.00000   100% 42823  634s
+     6     8    0.00000    3 2685  258.00000    0.00000   100% 37984  663s
+     7     9    0.39362    4 2550  258.00000    0.00000   100% 41942  747s
+     8    10    0.00000    4 2645  258.00000    0.00000   100% 37533  784s
+     9    11    0.00000    5 2634  258.00000    0.00000   100% 34136  805s
+    10    12    0.57127    5 2825  258.00000    0.00000   100% 36711  861s
+    11    13    0.00000    6 2623  258.00000    0.00000   100% 33603  870s
+    12    14    0.33665    6 2602  258.00000    0.00000   100% 32712  886s
+    14    16    0.33754    7 2591  258.00000    0.00000   100% 29609  907s
+    15    17    0.74907    8 2704  258.00000    0.00000   100% 30736  958s
+    16    18    0.00000    8 2633  258.00000    0.00000   100% 29028  976s
+
+Cutting planes:
+  Cover: 6
+  MIR: 14
+  StrongCG: 2
+  GUB cover: 717
+  Zero half: 60
+  RLT: 6
+
+Explored 17 nodes (736440 simplex iterations) in 1000.02 seconds (940.24 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 3: 258 259 260 
+
+Time limit reached
+Best objective 2.580000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_7_BARRIER.sol'
+
+Start SOLVER Sat 04/04/2026  6:04:27.30  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.50 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+Read solution from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_7_BARRIER.sol
+Read input file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_7_BARRIER.sol'
+
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0xf5c5a794
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded user MIP start with objective 258
+
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.45s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.02s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     3s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     4s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     4s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     4s
+
+Barrier solved model in 10 iterations and 4.39 seconds (4.17 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 6s
+       0 DPushes remaining with DInf 0.0000000e+00                 6s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 6s
+       0 PPushes remaining with PInf 0.0000000e+00                 7s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      7s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 4.01 seconds (2.84 work units)
+Total elapsed time = 18.88s (DegenMoves)
+Total elapsed time = 25.94s (DegenMoves)
+Total elapsed time = 32.28s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621  258.00000    0.00000   100%     -   37s
+     0     0    0.00000    0 2949  258.00000    0.00000   100%     -   68s
+H    0     0                     257.0000000    0.00000   100%     -   69s
+     0     0    0.00000    0 3165  257.00000    0.00000   100%     -   84s
+     0     0    0.00000    0 2930  257.00000    0.00000   100%     -  153s
+H    0     0                     256.0000000    0.00000   100%     -  163s
+     0     0    0.00000    0 3201  256.00000    0.00000   100%     -  181s
+     0     0    0.00000    0 2986  256.00000    0.00000   100%     -  263s
+     0     0    0.00000    0 3247  256.00000    0.00000   100%     -  286s
+     0     0    0.00000    0 3016  256.00000    0.00000   100%     -  366s
+     0     0    0.00000    0 2920  256.00000    0.00000   100%     -  415s
+H    0     0                     252.0000000    0.00000   100%     -  453s
+     0     2    0.00000    0 2720  252.00000    0.00000   100%     -  556s
+     1     3    0.00000    1 2686  252.00000    0.00000   100% 62706  564s
+     2     4    0.33285    1 2720  252.00000    0.00000   100% 67016  656s
+     3     5    0.00000    2 2692  252.00000    0.00000   100% 46550  670s
+     4     6    0.39071    2 2661  252.00000    0.00000   100% 49761  744s
+     5     7    0.00000    3 2676  252.00000    0.00000   100% 41751  761s
+     6     8    0.47079    3 2844  252.00000    0.00000   100% 41799  809s
+     7     9    0.00000    4 2646  252.00000    0.00000   100% 36739  820s
+     8    10    0.35016    5 2659  252.00000    0.00000   100% 46821  974s
+     9    11    0.00000    5 2635  252.00000    0.00000   100% 42251  996s
+
+Cutting planes:
+  Cover: 3
+  MIR: 9
+  StrongCG: 2
+  GUB cover: 781
+  Zero half: 46
+  RLT: 3
+
+Explored 10 nodes (729994 simplex iterations) in 1000.03 seconds (920.58 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 4: 252 256 257 258 
+
+Time limit reached
+Best objective 2.520000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_8_BARRIER.sol'
+
+Start SOLVER Sat 04/04/2026  6:21:08.02  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.61 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+Read solution from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_8_BARRIER.sol
+Read input file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_8_BARRIER.sol'
+
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0x0b2e185a
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded user MIP start with objective 252
+
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.53s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.03s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     4s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     4s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     4s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     5s
+
+Barrier solved model in 10 iterations and 4.52 seconds (4.17 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 7s
+       0 DPushes remaining with DInf 0.0000000e+00                 7s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 7s
+       0 PPushes remaining with PInf 0.0000000e+00                 7s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      7s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 4.21 seconds (2.84 work units)
+Total elapsed time = 18.59s (DegenMoves)
+Total elapsed time = 25.42s (DegenMoves)
+Total elapsed time = 31.56s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621  252.00000    0.00000   100%     -   36s
+     0     0    0.00000    0 2930  252.00000    0.00000   100%     -   63s
+     0     0    0.00000    0 3198  252.00000    0.00000   100%     -   86s
+     0     0    0.00000    0 2984  252.00000    0.00000   100%     -  157s
+     0     0    0.00000    0 3289  252.00000    0.00000   100%     -  185s
+     0     0    0.00000    0 3032  252.00000    0.00000   100%     -  266s
+     0     0    0.00000    0 2908  252.00000    0.00000   100%     -  312s
+     0     2    0.00000    0 2705  252.00000    0.00000   100%     -  437s
+     1     3    0.00000    1 2675  252.00000    0.00000   100% 77025  451s
+     2     4    0.36103    1 2661  252.00000    0.00000   100% 70246  530s
+     3     5    0.38648    2 2629  252.00000    0.00000   100% 70916  614s
+     4     6    0.00000    2 2655  252.00000    0.00000   100% 54707  623s
+     5     7    0.62880    3 2784  252.00000    0.00000   100% 72637  807s
+     6     8    0.00000    3 2636  252.00000    0.00000   100% 61588  827s
+     7     9    0.44522    4 2602  252.00000    0.00000   100% 63577  917s
+     8    10    0.00000    4 2674  252.00000    0.00000   100% 56478  944s
+     9    11    0.00000    5 2652  252.00000    0.00000   100% 50902  965s
+    10    12    0.00000    6 2640  252.00000    0.00000   100% 47079  981s
+
+Cutting planes:
+  Cover: 17
+  MIR: 22
+  StrongCG: 5
+  GUB cover: 867
+  Zero half: 40
+  RLT: 7
+
+Explored 11 nodes (729152 simplex iterations) in 1000.08 seconds (954.14 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 252 
+
+Time limit reached
+Best objective 2.520000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_9_BARRIER.sol'
+
+Start SOLVER Sat 04/04/2026  6:37:49.12  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.51 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+Read solution from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_9_BARRIER.sol
+Read input file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_9_BARRIER.sol'
+
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0x0b2e185a
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded user MIP start with objective 252
+
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.53s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.04s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     4s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     4s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     4s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     4s
+
+Barrier solved model in 10 iterations and 4.45 seconds (4.17 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 7s
+       0 DPushes remaining with DInf 0.0000000e+00                 7s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 7s
+       0 PPushes remaining with PInf 0.0000000e+00                 7s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      7s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 4.00 seconds (2.84 work units)
+Total elapsed time = 18.60s (DegenMoves)
+Total elapsed time = 25.56s (DegenMoves)
+Total elapsed time = 31.99s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621  252.00000    0.00000   100%     -   36s
+     0     0    0.00000    0 2930  252.00000    0.00000   100%     -   62s
+     0     0    0.00000    0 3198  252.00000    0.00000   100%     -   85s
+     0     0    0.00000    0 2984  252.00000    0.00000   100%     -  155s
+     0     0    0.00000    0 3289  252.00000    0.00000   100%     -  183s
+     0     0    0.00000    0 3032  252.00000    0.00000   100%     -  265s
+     0     0    0.00000    0 2908  252.00000    0.00000   100%     -  310s
+     0     2    0.00000    0 2705  252.00000    0.00000   100%     -  437s
+     1     3    0.00000    1 2675  252.00000    0.00000   100% 77025  449s
+     2     4    0.36103    1 2661  252.00000    0.00000   100% 70246  528s
+     3     5    0.38648    2 2629  252.00000    0.00000   100% 70916  610s
+     4     6    0.00000    2 2655  252.00000    0.00000   100% 54707  620s
+     5     7    0.62880    3 2784  252.00000    0.00000   100% 72637  806s
+     6     8    0.00000    3 2636  252.00000    0.00000   100% 61588  827s
+     7     9    0.44522    4 2602  252.00000    0.00000   100% 63577  921s
+     8    10    0.00000    4 2674  252.00000    0.00000   100% 56478  948s
+     9    11    0.00000    5 2652  252.00000    0.00000   100% 50902  969s
+    10    12    0.00000    6 2640  252.00000    0.00000   100% 47079  986s
+
+Cutting planes:
+  Cover: 17
+  MIR: 22
+  StrongCG: 5
+  GUB cover: 867
+  Zero half: 40
+  RLT: 7
+
+Explored 11 nodes (729152 simplex iterations) in 1000.07 seconds (950.21 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 252 
+
+Time limit reached
+Best objective 2.520000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_10_BARRIER.sol'
+
+Start SOLVER Sat 04/04/2026  6:54:29.92  
+Set parameter TimeLimit to value 1000
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3.lp
+Reading time = 0.50 seconds
+: 9928 rows, 62399 columns, 1032169 nonzeros
+
+Read solution from file C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_10_BARRIER.sol
+Read input file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_10_BARRIER.sol'
+
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 9928 rows, 62399 columns and 1032169 nonzeros
+Model fingerprint: 0x0b2e185a
+Variable types: 0 continuous, 62399 integer (62399 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+02]
+
+Loaded user MIP start with objective 252
+
+Presolve removed 153 rows and 335 columns
+Presolve time: 2.47s
+Presolved: 9775 rows, 62064 columns, 986236 nonzeros
+Variable types: 0 continuous, 62064 integer (62064 binary)
+Root barrier log...
+
+Ordering time: 0.02s
+
+Barrier statistics:
+ AA' NZ     : 4.564e+05
+ Factor NZ  : 9.211e+05 (roughly 36 MB of memory)
+ Factor Ops : 9.728e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.06924919e+04 -5.83805342e+02  1.23e+05 1.76e-15  1.09e+01     3s
+   1   4.22766413e+04 -2.02818472e+03  8.15e+04 2.04e-01  7.26e+00     3s
+   2   8.17632120e+03 -3.43896588e+03  1.33e+04 2.39e-15  1.23e+00     4s
+   3   1.44863430e+03 -2.29685477e+03  1.87e+03 2.33e-15  1.82e-01     4s
+   4   2.69350926e+02 -8.87953104e+02  1.65e+02 1.61e-15  2.11e-02     4s
+   5   1.93925469e+01 -2.97210679e+02  1.13e+01 1.39e-15  3.01e-03     4s
+   6   1.55385690e+00 -2.89883990e+01  7.21e-01 1.33e-15  2.41e-04     4s
+   7   1.74030388e-02 -9.04308070e-01  6.10e-03 1.39e-15  6.95e-06     4s
+   8   2.09515486e-05 -9.04005474e-04  1.87e-07 1.34e-15  6.97e-09     4s
+   9   2.09463919e-08 -9.04005490e-07  2.37e-12 1.33e-15  6.97e-12     4s
+  10   2.09463917e-11 -9.06544388e-10  5.68e-13 1.96e-15  6.97e-15     4s
+
+Barrier solved model in 10 iterations and 4.37 seconds (4.17 work units)
+Optimal objective 2.09463917e-11
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1202 DPushes remaining with DInf 0.0000000e+00                 6s
+       0 DPushes remaining with DInf 0.0000000e+00                 6s
+
+     302 PPushes remaining with PInf 7.1919704e-06                 6s
+       0 PPushes remaining with PInf 0.0000000e+00                 7s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      7s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+     308    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 308 iterations, 4.03 seconds (2.84 work units)
+Total elapsed time = 18.63s (DegenMoves)
+Total elapsed time = 25.46s (DegenMoves)
+Total elapsed time = 32.24s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2621  252.00000    0.00000   100%     -   37s
+     0     0    0.00000    0 2930  252.00000    0.00000   100%     -   63s
+     0     0    0.00000    0 3198  252.00000    0.00000   100%     -   85s
+     0     0    0.00000    0 2984  252.00000    0.00000   100%     -  156s
+     0     0    0.00000    0 3289  252.00000    0.00000   100%     -  185s
+     0     0    0.00000    0 3032  252.00000    0.00000   100%     -  265s
+     0     0    0.00000    0 2908  252.00000    0.00000   100%     -  311s
+     0     2    0.00000    0 2705  252.00000    0.00000   100%     -  439s
+     1     3    0.00000    1 2675  252.00000    0.00000   100% 77025  451s
+     2     4    0.36103    1 2661  252.00000    0.00000   100% 70246  531s
+     3     5    0.38648    2 2629  252.00000    0.00000   100% 70916  613s
+     4     6    0.00000    2 2655  252.00000    0.00000   100% 54707  623s
+     5     7    0.62880    3 2784  252.00000    0.00000   100% 72637  809s
+     6     8    0.00000    3 2636  252.00000    0.00000   100% 61588  830s
+     7     9    0.44522    4 2602  252.00000    0.00000   100% 63577  921s
+     8    10    0.00000    4 2674  252.00000    0.00000   100% 56478  950s
+     9    11    0.00000    5 2652  252.00000    0.00000   100% 50902  970s
+    10    12    0.00000    6 2640  252.00000    0.00000   100% 47079  987s
+
+Cutting planes:
+  Cover: 17
+  MIR: 22
+  StrongCG: 5
+  GUB cover: 867
+  Zero half: 40
+  RLT: 7
+
+Explored 11 nodes (729152 simplex iterations) in 1000.05 seconds (949.69 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 252 
+
+Time limit reached
+Best objective 2.520000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\GUROBI_LOOP_1000_s\\20260223_51x1200_3_GUROBI_1_THREAD_11_BARRIER.sol'
+

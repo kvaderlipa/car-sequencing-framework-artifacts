@@ -1,0 +1,63 @@
+Start SOLVER Mon 09/21/2026  8:46:21.95  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Warning: Numeric variable name in LP file ('0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\lopq820_100_8_20_00_hard.lp
+Reading time = 0.04 seconds
+OBJ: 900 rows, 2001 columns, 17720 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 900 rows, 2001 columns and 17720 nonzeros
+Model fingerprint: 0xea870910
+Variable types: 1 continuous, 2000 integer (2000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+00]
+Presolve removed 0 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 900 rows, 2000 columns, 17720 nonzeros
+Variable types: 0 continuous, 2000 integer (2000 binary)
+
+Root relaxation: objective 0.000000e+00, 1305 iterations, 0.09 seconds (0.09 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  266          -    0.00000      -     -    0s
+     0     0    0.00000    0  316          -    0.00000      -     -    1s
+     0     0    0.00000    0  308          -    0.00000      -     -    1s
+     0     0    0.00000    0  151          -    0.00000      -     -    2s
+     0     0    0.00000    0  134          -    0.00000      -     -    2s
+     0     0    0.00000    0  116          -    0.00000      -     -    2s
+     0     0    0.00000    0  132          -    0.00000      -     -    3s
+     0     0    0.00000    0  142          -    0.00000      -     -    3s
+H    0     0                       0.0000000    0.00000  0.00%     -    3s
+     0     0    0.00000    0  135    0.00000    0.00000  0.00%     -    4s
+
+Cutting planes:
+  Clique: 59
+  MIR: 1
+  Zero half: 36
+
+Explored 1 nodes (35563 simplex iterations) in 4.03 seconds (3.51 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\lopq820_100_8_20_00_hard.sol'
+

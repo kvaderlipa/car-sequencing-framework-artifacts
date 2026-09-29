@@ -1,0 +1,58 @@
+Start SOLVER Tue 09/22/2026 14:29:39.73  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\pontes_agg_018_1440_soft.lp
+Reading time = 0.12 seconds
+OBJ: 10076 rows, 25904 columns, 175404 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 10076 rows, 25904 columns and 175404 nonzeros
+Model fingerprint: 0xe4a3f9f7
+Variable types: 8624 continuous, 17280 integer (17280 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+02]
+Found heuristic solution: objective 660.0000000
+Presolve removed 1438 rows and 5755 columns
+Presolve time: 0.18s
+Presolved: 8638 rows, 20149 columns, 109307 nonzeros
+Variable types: 0 continuous, 20149 integer (12960 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root relaxation: objective 0.000000e+00, 885 iterations, 0.13 seconds (0.11 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    8  660.00000    0.00000   100%     -    0s
+H    0     0                       1.0000000    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0    8    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (885 simplex iterations) in 0.42 seconds (0.36 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 0 1 660 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\pontes_agg_018_1440_soft.sol'
+

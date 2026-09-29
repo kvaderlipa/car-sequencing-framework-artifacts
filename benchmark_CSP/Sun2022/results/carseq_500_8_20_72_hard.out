@@ -1,0 +1,65 @@
+Start SOLVER Sat 09/19/2026 11:20:24.54  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Warning: Numeric variable name in LP file ('0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\carseq_500_8_20_72_hard.lp
+Reading time = 0.06 seconds
+OBJ: 4501 rows, 10001 columns, 89154 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 4501 rows, 10001 columns and 89154 nonzeros
+Model fingerprint: 0xe678f923
+Variable types: 1 continuous, 10000 integer (10000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+01]
+Presolve removed 0 rows and 1 columns
+Presolve time: 0.11s
+Presolved: 4501 rows, 10000 columns, 89154 nonzeros
+Variable types: 0 continuous, 10000 integer (10000 binary)
+
+Root relaxation: objective 0.000000e+00, 7497 iterations, 2.02 seconds (1.99 work units)
+Total elapsed time = 7.62s (DegenMoves)
+Total elapsed time = 10.29s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  716          -    0.00000      -     -   15s
+     0     0    0.00000    0 1198          -    0.00000      -     -   17s
+     0     0    0.00000    0 1190          -    0.00000      -     -   17s
+     0     0    0.00000    0  185          -    0.00000      -     -   30s
+     0     0    0.00000    0  224          -    0.00000      -     -   30s
+     0     0    0.00000    0   12          -    0.00000      -     -   35s
+     0     0    0.00000    0    8          -    0.00000      -     -   38s
+H    0     0                       0.0000000    0.00000  0.00%     -   38s
+     0     0    0.00000    0   16    0.00000    0.00000  0.00%     -   38s
+
+Cutting planes:
+  Gomory: 4
+  Clique: 271
+  MIR: 3
+  Zero half: 118
+
+Explored 1 nodes (169762 simplex iterations) in 38.59 seconds (36.60 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\carseq_500_8_20_72_hard.sol'
+

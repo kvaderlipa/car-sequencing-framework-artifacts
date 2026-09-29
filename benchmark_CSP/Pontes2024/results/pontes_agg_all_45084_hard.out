@@ -1,0 +1,102 @@
+Start SOLVER Tue 09/22/2026 14:30:05.03  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Warning: Numeric variable name in LP file ('0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\pontes_agg_all_45084_hard.lp
+Reading time = 2.99 seconds
+OBJ: 315584 rows, 541009 columns, 5229484 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 315584 rows, 541009 columns and 5229484 nonzeros
+Model fingerprint: 0x37f2ec1c
+Variable types: 1 continuous, 541008 integer (541008 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+04]
+Presolve removed 0 rows and 1 columns (presolve time = 5s) ...
+Presolve removed 0 rows and 1 columns (presolve time = 10s) ...
+Presolve removed 0 rows and 1 columns (presolve time = 15s) ...
+Presolve removed 0 rows and 1 columns (presolve time = 20s) ...
+Presolve removed 0 rows and 1 columns (presolve time = 25s) ...
+Presolve removed 0 rows and 1 columns (presolve time = 30s) ...
+Presolve removed 0 rows and 1 columns
+Presolve time: 30.15s
+Presolved: 315584 rows, 541008 columns, 5229484 nonzeros
+Variable types: 0 continuous, 541008 integer (541008 binary)
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Root barrier log...
+
+Ordering time: 0.71s
+
+Barrier statistics:
+ AA' NZ     : 6.537e+06
+ Factor NZ  : 1.120e+07 (roughly 400 MB of memory)
+ Factor Ops : 4.028e+08 (less than 1 second per iteration)
+ Threads    : 5
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   0.00000000e+00  0.00000000e+00  1.08e+07 0.00e+00  8.67e+00    51s
+   1   0.00000000e+00 -1.56739256e+04  4.48e+06 0.00e+00  3.65e+00    51s
+   2   0.00000000e+00 -1.54382250e+04  1.52e+04 9.58e-16  2.37e-02    52s
+   3   0.00000000e+00 -3.78087316e+03  2.66e+03 8.47e-16  4.06e-03    53s
+   4   0.00000000e+00 -4.64215059e+02  5.78e+01 6.18e-16  3.56e-04    54s
+   5   0.00000000e+00 -1.56990013e+00  1.74e-08 7.01e-16  1.16e-06    55s
+   6   0.00000000e+00 -1.93371125e-06  2.46e-08 4.46e-16  1.43e-12    55s
+   7   0.00000000e+00  8.94942787e-10  6.31e-10 3.58e-16  1.43e-15    56s
+
+Barrier solved model in 7 iterations and 56.18 seconds (35.34 work units)
+Optimal objective 0.00000000e+00
+
+
+Root crossover log...
+
+      12 DPushes remaining with DInf 0.0000000e+00                57s
+       0 DPushes remaining with DInf 0.0000000e+00                57s
+
+  495913 PPushes remaining with PInf 0.0000000e+00                57s
+  447470 PPushes remaining with PInf 0.0000000e+00                70s
+  321484 PPushes remaining with PInf 0.0000000e+00                75s
+  296018 PPushes remaining with PInf 0.0000000e+00                87s
+  274486 PPushes remaining with PInf 0.0000000e+00                99s
+Concurrent spin time: 0.03s
+
+Solved with dual simplex
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   39773    0.0000000e+00   0.000000e+00   0.000000e+00    100s
+
+Root relaxation: objective 0.000000e+00, 39773 iterations, 65.40 seconds (32.70 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -  100s
+     0     0    0.00000    0  615    0.00000    0.00000  0.00%     -  100s
+
+Explored 1 nodes (39773 simplex iterations) in 100.67 seconds (58.00 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\pontes_agg_all_45084_hard.sol'
+

@@ -1,0 +1,53 @@
+Set parameter TimeLimit to value 10800
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file 20260219_88x1257_0.lp
+Reading time = 0.88 seconds
+: 6674 rows, 110616 columns, 1444259 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 6674 rows, 110616 columns and 1444259 nonzeros
+Model fingerprint: 0xa661bcc1
+Variable types: 0 continuous, 110616 integer (110616 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 2 rows and 65 columns
+Presolve time: 3.50s
+Presolved: 6672 rows, 110551 columns, 1443106 nonzeros
+Variable types: 0 continuous, 110551 integer (110551 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    2947    1.2047173e-04   3.174000e+03   0.000000e+00      5s
+    6143    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 0.000000e+00, 6143 iterations, 3.11 seconds (2.55 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -    7s
+     0     0    0.00000    0   86    0.00000    0.00000  0.00%     -    7s
+
+Explored 1 nodes (6143 simplex iterations) in 7.09 seconds (6.95 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file '20260219_88x1257_0_GUROBI_1_THREAD.sol'
+

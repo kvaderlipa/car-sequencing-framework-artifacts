@@ -1,0 +1,56 @@
+Start SOLVER Tue 09/22/2026 14:29:43.38  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\pontes_agg_021_1671_soft.lp
+Reading time = 0.11 seconds
+OBJ: 11693 rows, 30062 columns, 203586 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 11693 rows, 30062 columns and 203586 nonzeros
+Model fingerprint: 0x682f1d68
+Variable types: 10010 continuous, 20052 integer (20052 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+02]
+Found heuristic solution: objective 1144.0000000
+Presolve removed 1669 rows and 3339 columns
+Presolve time: 0.28s
+Presolved: 10024 rows, 26723 columns, 176885 nonzeros
+Variable types: 0 continuous, 26723 integer (18381 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root relaxation: objective 0.000000e+00, 1535 iterations, 0.22 seconds (0.19 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0   91    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (1535 simplex iterations) in 0.58 seconds (0.47 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 2: 0 1144 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\pontes_agg_021_1671_soft.sol'
+

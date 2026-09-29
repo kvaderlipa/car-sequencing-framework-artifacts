@@ -1,0 +1,46 @@
+Start SOLVER Wed 09/23/2026 10:59:38.92  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\Rlou_300_5_25_00_soft.lp
+Reading time = 0.06 seconds
+OBJ: 1812 rows, 8987 columns, 87175 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1812 rows, 8987 columns and 87175 nonzeros
+Model fingerprint: 0xd2c1b42e
+Variable types: 1487 continuous, 7500 integer (7500 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+01]
+Found heuristic solution: objective 259.0000000
+Presolve time: 0.16s
+Presolved: 1812 rows, 8987 columns, 87175 nonzeros
+Variable types: 0 continuous, 8987 integer (7500 binary)
+
+Root relaxation: objective 0.000000e+00, 1620 iterations, 0.20 seconds (0.17 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    1s
+
+Explored 1 nodes (13335 simplex iterations) in 1.12 seconds (0.92 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 2: 0 259 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\Rlou_300_5_25_00_soft.sol'
+

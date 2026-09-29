@@ -1,0 +1,82 @@
+Start SOLVER Fri 09/18/2026 18:57:20.64  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\carseq_100_8_20_86_soft.lp
+Reading time = 0.03 seconds
+OBJ: 899 rows, 2779 columns, 22487 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 899 rows, 2779 columns and 22487 nonzeros
+Model fingerprint: 0x920a3e44
+Variable types: 779 continuous, 2000 integer (2000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+00]
+Found heuristic solution: objective 178.0000000
+Presolve time: 0.03s
+Presolved: 899 rows, 2779 columns, 22487 nonzeros
+Variable types: 0 continuous, 2779 integer (2000 binary)
+
+Root relaxation: objective 0.000000e+00, 1777 iterations, 0.15 seconds (0.17 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  246  178.00000    0.00000   100%     -    1s
+H    0     0                      83.0000000    0.00000   100%     -    1s
+H    0     0                      82.0000000    0.00000   100%     -    1s
+H    0     0                      67.0000000    0.00000   100%     -    1s
+H    0     0                      65.0000000    0.00000   100%     -    1s
+     0     0    0.00000    0  275   65.00000    0.00000   100%     -    1s
+H    0     0                      55.0000000    0.00000   100%     -    1s
+H    0     0                      15.0000000    0.00000   100%     -    2s
+     0     0    0.00000    0  161   15.00000    0.00000   100%     -    2s
+H    0     0                       7.0000000    0.00000   100%     -    3s
+     0     0    0.00000    0  226    7.00000    0.00000   100%     -    3s
+     0     0    0.00000    0  211    7.00000    0.00000   100%     -    3s
+     0     0    0.00000    0  149    7.00000    0.00000   100%     -    4s
+     0     0    0.00000    0  239    7.00000    0.00000   100%     -    4s
+     0     0    0.00000    0  279    7.00000    0.00000   100%     -    5s
+     0     0    0.00000    0  277    7.00000    0.00000   100%     -    5s
+     0     2    0.00000    0  277    7.00000    0.00000   100%     -    7s
+H    4     8                       3.0000000    0.00000   100%   808    7s
+    57    82    0.00000    8  228    3.00000    0.00000   100%   602   10s
+    81    90    0.00000   11  210    3.00000    0.00000   100%   549   16s
+   147   471    0.00000   17  191    3.00000    0.00000   100%   524   21s
+   470   668    0.00000   41  184    3.00000    0.00000   100%   431   26s
+H  494   668                       2.0000000    0.00000   100%   425   26s
+H  520   634                       1.0000000    0.00000   100%   417   26s
+   674   446    0.00000   12  142    1.00000    0.00000   100%   381   30s
+   689   456    0.00000   17  125    1.00000    0.00000   100%   373   35s
+   765   516    0.00000   21  117    1.00000    0.00000   100%  99.5   41s
+   877   739    0.00000   29  210    1.00000    0.00000   100%   173   45s
+  1192  1204    0.00000   39  200    1.00000    0.00000   100%   256   55s
+  1856  1317    0.00000   77  116    1.00000    0.00000   100%   252   63s
+H 2016   779                       0.0000000    0.00000  0.00%   245   63s
+
+Cutting planes:
+  Clique: 11
+  MIR: 1
+  Flow cover: 1
+  Zero half: 21
+
+Explored 2523 nodes (880088 simplex iterations) in 63.17 seconds (72.05 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 0 1 2 ... 82
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\carseq_100_8_20_86_soft.sol'
+

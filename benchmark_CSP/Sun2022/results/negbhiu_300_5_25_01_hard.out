@@ -1,0 +1,78 @@
+Start SOLVER Mon 09/21/2026 20:59:44.80  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Warning: Numeric variable name in LP file ('0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\negbhiu_300_5_25_01_hard.lp
+Reading time = 0.05 seconds
+OBJ: 1813 rows, 7501 columns, 80422 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1813 rows, 7501 columns and 80422 nonzeros
+Model fingerprint: 0xa79b7d8c
+Variable types: 1 continuous, 7500 integer (7500 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Presolve removed 0 rows and 1 columns
+Presolve time: 0.12s
+Presolved: 1813 rows, 7500 columns, 80422 nonzeros
+Variable types: 0 continuous, 7500 integer (7500 binary)
+
+Root relaxation: objective 0.000000e+00, 6777 iterations, 1.66 seconds (1.87 work units)
+Total elapsed time = 5.17s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  633          -    0.00000      -     -    8s
+     0     0    0.00000    0 1081          -    0.00000      -     -    9s
+     0     0    0.00000    0 1088          -    0.00000      -     -   10s
+     0     0    0.00000    0  631          -    0.00000      -     -   20s
+     0     0    0.00000    0  724          -    0.00000      -     -   21s
+     0     0    0.00000    0  550          -    0.00000      -     -   30s
+     0     0    0.00000    0  689          -    0.00000      -     -   30s
+     0     0    0.00000    0  564          -    0.00000      -     -   39s
+     0     0    0.00000    0  677          -    0.00000      -     -   40s
+     0     0    0.00000    0  486          -    0.00000      -     -   51s
+     0     0    0.00000    0  781          -    0.00000      -     -   52s
+     0     0    0.00000    0  601          -    0.00000      -     -   61s
+     0     0    0.00000    0  386          -    0.00000      -     -   68s
+     0     2    0.00000    0  357          -    0.00000      -     -   82s
+     3     8    0.00000    2  585          -    0.00000      -  9446   89s
+     7    16    0.00000    3  712          -    0.00000      -  5809   90s
+    39    48    0.00000    6  615          -    0.00000      -  3443   95s
+    59    78    0.00000    7  621          -    0.00000      -  3026  102s
+    79    99    0.00000   10  771          -    0.00000      -  3198  113s
+   100   284    0.00000   13  680          -    0.00000      -  3019  125s
+   293   731    0.00000   48  266          -    0.00000      -  2447  157s
+*  753   731              60       0.0000000    0.00000  0.00%  2007  157s
+
+Cutting planes:
+  Gomory: 5
+  Clique: 128
+  MIR: 22
+  StrongCG: 1
+  Zero half: 108
+
+Explored 856 nodes (2070209 simplex iterations) in 157.66 seconds (183.67 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\negbhiu_300_5_25_01_hard.sol'
+

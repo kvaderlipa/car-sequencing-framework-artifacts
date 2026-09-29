@@ -1,0 +1,55 @@
+Start SOLVER Mon 09/21/2026  8:46:02.27  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\hipqmedu_500_5_25_01_soft.lp
+Reading time = 0.11 seconds
+OBJ: 3008 rows, 14983 columns, 186337 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 3008 rows, 14983 columns and 186337 nonzeros
+Model fingerprint: 0xfdbc069f
+Variable types: 2483 continuous, 12500 integer (12500 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+01]
+Found heuristic solution: objective 260.0000000
+Presolve time: 0.24s
+Presolved: 3008 rows, 14983 columns, 186337 nonzeros
+Variable types: 0 continuous, 14983 integer (12500 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.02s
+
+Solved with dual simplex
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root relaxation: objective 0.000000e+00, 1628 iterations, 0.21 seconds (0.19 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0  352    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (1628 simplex iterations) in 0.49 seconds (0.45 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 2: 0 260 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\hipqmedu_500_5_25_01_soft.sol'
+

@@ -1,0 +1,109 @@
+Start SOLVER Mon 09/21/2026 20:55:24.98  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\negbhiu_300_5_25_00_soft.lp
+Reading time = 0.06 seconds
+OBJ: 1815 rows, 8990 columns, 80750 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1815 rows, 8990 columns and 80750 nonzeros
+Model fingerprint: 0x68fd16a9
+Variable types: 1490 continuous, 7500 integer (7500 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 424.0000000
+Presolve time: 0.12s
+Presolved: 1815 rows, 8990 columns, 80750 nonzeros
+Variable types: 0 continuous, 8990 integer (7500 binary)
+
+Root relaxation: objective 0.000000e+00, 5001 iterations, 1.05 seconds (1.14 work units)
+Total elapsed time = 5.64s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  669  424.00000    0.00000   100%     -    8s
+H    0     0                     132.0000000    0.00000   100%     -    8s
+H    0     0                     127.0000000    0.00000   100%     -    8s
+H    0     0                     105.9999999    0.00000   100%     -    8s
+     0     0    0.00000    0  739  106.00000    0.00000   100%     -   10s
+H    0     0                     102.0000000    0.00000   100%     -   10s
+H    0     0                     101.0000000    0.00000   100%     -   10s
+     0     0    0.00000    0  689  101.00000    0.00000   100%     -   10s
+H    0     0                      27.0000000    0.00000   100%     -   18s
+H    0     0                      24.0000000    0.00000   100%     -   18s
+     0     0    0.00000    0  398   24.00000    0.00000   100%     -   21s
+     0     0    0.00000    0  390   24.00000    0.00000   100%     -   21s
+H    0     0                      22.0000000    0.00000   100%     -   30s
+     0     0    0.00000    0  262   22.00000    0.00000   100%     -   32s
+     0     0    0.00000    0  317   22.00000    0.00000   100%     -   33s
+H    0     0                      19.0000000    0.00000   100%     -   43s
+     0     0    0.00000    0  221   19.00000    0.00000   100%     -   46s
+     0     0    0.00000    0  272   19.00000    0.00000   100%     -   47s
+     0     0    0.00000    0  233   19.00000    0.00000   100%     -   53s
+     0     0    0.00000    0  510   19.00000    0.00000   100%     -   55s
+     0     0    0.00000    0  155   19.00000    0.00000   100%     -   61s
+     0     0    0.00000    0  234   19.00000    0.00000   100%     -   62s
+H    0     0                      17.0000000    0.00000   100%     -   68s
+     0     0    0.00000    0  176   17.00000    0.00000   100%     -   69s
+H    0     0                      16.0000000    0.00000   100%     -   70s
+     0     0    0.00000    0  223   16.00000    0.00000   100%     -   71s
+     0     0    0.00000    0  151   16.00000    0.00000   100%     -   76s
+     0     0    0.00000    0  151   16.00000    0.00000   100%     -   78s
+H    0     0                       7.0000000    0.00000   100%     -   80s
+H    0     0                       2.0000000    0.00000   100%     -   85s
+     0     2    0.00000    0  151    2.00000    0.00000   100%     -   88s
+     3     8    0.00000    2  555    2.00000    0.00000   100%  4493   97s
+    15    24    0.00000    4  483    2.00000    0.00000   100%  2392  100s
+    31    40    0.00000    5  475    2.00000    0.00000   100%  2175  117s
+    47    64    0.00000    7  458    2.00000    0.00000   100%  1938  128s
+H   56    64                       1.0000000    0.00000   100%  1720  128s
+    64    65    0.00000    9  151    1.00000    0.00000   100%  1593  132s
+    66    66    0.00000    7  560    1.00000    0.00000   100%  1545  138s
+    67    67    0.00000    8  537    1.00000    0.00000   100%  1522  149s
+    68    68    0.00000    6  670    1.00000    0.00000   100%  1500  150s
+    69    68    0.00000    6  331    1.00000    0.00000   100%  1478  160s
+    71    70    0.00000    6  265    1.00000    0.00000   100%  1436  170s
+    73    71    0.00000    7  250    1.00000    0.00000   100%  1397  179s
+    74    72    0.00000    6  329    1.00000    0.00000   100%  1378  180s
+    75    72    0.00000    9  172    1.00000    0.00000   100%  1360  188s
+    76    73    0.00000    7  495    1.00000    0.00000   100%  1342  190s
+    77    74    0.00000    7  151    1.00000    0.00000   100%  1324  197s
+    79    75    0.00000    8  139    1.00000    0.00000   100%  1291  205s
+    81    76    0.00000    6  115    1.00000    0.00000   100%  1259  211s
+    83    78    0.00000    9  101    1.00000    0.00000   100%  1229  217s
+    85    79    0.00000    7  105    1.00000    0.00000   100%  1200  221s
+    87    80    0.00000    6   82    1.00000    0.00000   100%  1172  230s
+    89    82    0.00000    6   93    1.00000    0.00000   100%  1146  237s
+    91    83    0.00000    6  119    1.00000    0.00000   100%  1121  243s
+    92    84    0.00000    5   79    1.00000    0.00000   100%  1109  246s
+    93    84    0.00000    6   79    1.00000    0.00000   100%  1097  253s
+H   93    81                       0.0000000    0.00000  0.00%  5243  259s
+
+Cutting planes:
+  Clique: 74
+  MIR: 13
+  Flow cover: 10
+  Zero half: 33
+
+Explored 94 nodes (994671 simplex iterations) in 259.63 seconds (275.12 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 0 1 2 ... 27
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\negbhiu_300_5_25_00_soft.sol'
+

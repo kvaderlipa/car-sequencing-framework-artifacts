@@ -1,0 +1,94 @@
+Set parameter TimeLimit to value 10800
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file 20260224_66x1220_0.lp
+Reading time = 0.51 seconds
+: 7674 rows, 80520 columns, 1002720 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 7674 rows, 80520 columns and 1002720 nonzeros
+Model fingerprint: 0x9a544d15
+Variable types: 0 continuous, 80520 integer (80520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 2 rows and 42 columns
+Presolve time: 2.07s
+Presolved: 7672 rows, 80478 columns, 1001983 nonzeros
+Variable types: 0 continuous, 80478 integer (80478 binary)
+Root barrier log...
+
+Ordering time: 0.03s
+
+Barrier statistics:
+ AA' NZ     : 2.872e+05
+ Factor NZ  : 5.898e+05 (roughly 40 MB of memory)
+ Factor Ops : 5.654e+07 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   0.00000000e+00  0.00000000e+00  1.22e+05 0.00e+00  1.14e+00     3s
+   1   0.00000000e+00 -2.24372676e+02  8.96e+04 2.38e-02  8.50e-01     3s
+   2   0.00000000e+00 -3.77952118e+02  6.67e+03 2.43e-16  6.57e-02     3s
+   3   0.00000000e+00 -1.99622694e+02  1.76e+03 2.50e-16  1.75e-02     3s
+   4   0.00000000e+00 -1.40250985e+02  5.10e+02 1.67e-16  5.47e-03     3s
+   5   0.00000000e+00 -6.25054503e+01  1.06e+02 2.01e-16  1.29e-03     4s
+   6   0.00000000e+00 -2.88809890e+01  8.42e+01 1.53e-16  7.29e-04     4s
+   7   0.00000000e+00 -1.52571027e+01  3.82e+00 1.32e-16  1.35e-04     4s
+   8   0.00000000e+00 -2.35329675e+00  1.76e-01 1.28e-16  1.48e-05     4s
+   9   0.00000000e+00 -3.50464459e-02  1.59e-03 1.32e-16  2.11e-07     4s
+  10   0.00000000e+00 -5.33655569e-08  6.58e-09 1.33e-16  3.27e-13     4s
+  11   0.00000000e+00 -5.32258682e-11  2.18e-11 1.53e-16  3.27e-16     4s
+
+Barrier solved model in 11 iterations and 4.03 seconds (3.88 work units)
+Optimal objective 0.00000000e+00
+
+  Building initial crossover basis                                 5s
+
+Root crossover log...
+
+    1115 DPushes remaining with DInf 0.0000000e+00                 6s
+       0 DPushes remaining with DInf 0.0000000e+00                 6s
+
+      64 PPushes remaining with PInf 0.0000000e+00                 6s
+       0 PPushes remaining with PInf 0.0000000e+00                 6s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00      6s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    1182    0.0000000e+00   0.000000e+00   0.000000e+00      6s
+    1182    0.0000000e+00   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 0.000000e+00, 1182 iterations, 4.03 seconds (2.82 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0000000    0.00000  0.00%     -    6s
+     0     0    0.00000    0  235    0.00000    0.00000  0.00%     -    6s
+
+Explored 1 nodes (1182 simplex iterations) in 6.45 seconds (5.58 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file '20260224_66x1220_0_GUROBI_1_THREAD_BARRIER.sol'
+

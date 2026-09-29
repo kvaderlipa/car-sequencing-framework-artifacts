@@ -1,0 +1,80 @@
+Start SOLVER Mon 09/21/2026 20:52:15.38  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\negbhiu_100_5_25_02_soft.lp
+Reading time = 0.03 seconds
+OBJ: 614 rows, 2989 columns, 26703 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 614 rows, 2989 columns and 26703 nonzeros
+Model fingerprint: 0xc52f0e47
+Variable types: 489 continuous, 2500 integer (2500 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+00]
+Found heuristic solution: objective 122.0000000
+Presolve time: 0.03s
+Presolved: 614 rows, 2989 columns, 26703 nonzeros
+Variable types: 0 continuous, 2989 integer (2500 binary)
+
+Root relaxation: objective 3.030303e-02, 3889 iterations, 0.37 seconds (0.43 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.03030    0  396  122.00000    0.03030   100%     -    0s
+H    0     0                      50.0000000    0.03030   100%     -    0s
+H    0     0                      49.0000000    0.03030   100%     -    1s
+H    0     0                      47.0000000    1.00000  97.9%     -    1s
+     0     0    1.00000    0  422   47.00000    1.00000  97.9%     -    1s
+H    0     0                      40.0000000    1.00000  97.5%     -    1s
+     0     0    1.00000    0  425   40.00000    1.00000  97.5%     -    2s
+     0     0    1.00000    0  396   40.00000    1.00000  97.5%     -    2s
+H    0     0                      16.0000000    1.00000  93.7%     -    3s
+H    0     0                      13.0000000    1.00000  92.3%     -    3s
+     0     0    1.00000    0  231   13.00000    1.00000  92.3%     -    4s
+     0     0    1.00000    0  245   13.00000    1.00000  92.3%     -    4s
+H    0     0                       9.0000000    1.00000  88.9%     -    5s
+     0     0    1.00000    0  135    9.00000    1.00000  88.9%     -    5s
+     0     0    1.00000    0  157    9.00000    1.00000  88.9%     -    6s
+H    0     0                       7.0000000    1.00000  85.7%     -    6s
+H    0     0                       6.0000000    1.00000  83.3%     -    7s
+     0     0    1.00000    0   76    6.00000    1.00000  83.3%     -    7s
+     0     0    1.00000    0  117    6.00000    1.00000  83.3%     -    7s
+H    0     0                       5.0000000    1.00000  80.0%     -    8s
+     0     0    1.00000    0  120    5.00000    1.00000  80.0%     -    8s
+     0     0    1.00000    0  116    5.00000    1.00000  80.0%     -    9s
+     0     2    1.00000    0   76    5.00000    1.00000  80.0%     -   10s
+    55    71    1.00000    7  255    5.00000    1.00000  80.0%  1041   15s
+H   59    71                       3.0000000    1.00000  66.7%   995   15s
+H   72    79                       2.0000000    1.00000  50.0%  1036   17s
+    83    79    1.00000   12  413    2.00000    1.00000  50.0%   939   20s
+H   87    76                       1.0000000    1.00000  0.00%   896   25s
+
+Cutting planes:
+  Gomory: 3
+  Clique: 76
+  MIR: 37
+  Flow cover: 48
+  Zero half: 50
+
+Explored 87 nodes (221818 simplex iterations) in 25.22 seconds (27.25 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 1 2 3 ... 40
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\negbhiu_100_5_25_02_soft.sol'
+

@@ -1,0 +1,77 @@
+Start SOLVER Thu 09/17/2026 15:21:38.79  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\16-81_soft.lp
+Reading time = 0.03 seconds
+OBJ: 613 rows, 3087 columns, 27917 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 613 rows, 3087 columns and 27917 nonzeros
+Model fingerprint: 0x9e251b29
+Variable types: 487 continuous, 2600 integer (2600 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+01]
+Found heuristic solution: objective 162.0000000
+Presolve time: 0.04s
+Presolved: 613 rows, 3087 columns, 27917 nonzeros
+Variable types: 0 continuous, 3087 integer (2600 binary)
+
+Root relaxation: objective 0.000000e+00, 2531 iterations, 0.25 seconds (0.33 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  367  162.00000    0.00000   100%     -    1s
+H    0     0                      64.0000000    0.00000   100%     -    1s
+H    0     0                      56.0000000    0.00000   100%     -    1s
+H    0     0                      49.0000000    0.00000   100%     -    2s
+     0     0    0.00000    0  410   49.00000    0.00000   100%     -    2s
+     0     0    0.00000    0  408   49.00000    0.00000   100%     -    2s
+H    0     0                      12.0000000    0.00000   100%     -    3s
+     0     0    0.00000    0  141   12.00000    0.00000   100%     -    4s
+     0     0    0.00000    0  321   12.00000    0.00000   100%     -    4s
+     0     0    0.00000    0  217   12.00000    0.00000   100%     -    6s
+     0     0    0.00000    0  214   12.00000    0.00000   100%     -    6s
+H    0     0                       7.0000000    0.00000   100%     -    6s
+     0     0    0.00000    0   83    7.00000    0.00000   100%     -    7s
+     0     0    0.00000    0   84    7.00000    0.00000   100%     -    7s
+     0     0    0.00000    0  150    7.00000    0.00000   100%     -    7s
+     0     0    0.00000    0  146    7.00000    0.00000   100%     -    8s
+     0     0    0.00000    0  170    7.00000    0.00000   100%     -    8s
+     0     0    0.00000    0  170    7.00000    0.00000   100%     -    8s
+H    0     0                       4.0000000    0.00000   100%     -    8s
+H    0     0                       2.0000000    0.00000   100%     -    9s
+     0     2    0.00000    0  170    2.00000    0.00000   100%     -    9s
+     1     4    0.00000    1  304    2.00000    0.00000   100%  3084   10s
+H    5     8                       1.0000000    0.00000   100%  1027   10s
+    11    11    0.00000    3  119    1.00000    0.00000   100%   694   15s
+*   11    10              12       0.0000000    0.00000  0.00%   694   16s
+
+Cutting planes:
+  Gomory: 8
+  Clique: 43
+  MIR: 3
+  Flow cover: 5
+  Zero half: 30
+
+Explored 11 nodes (116543 simplex iterations) in 16.59 seconds (16.35 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 0 1 2 ... 162
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\16-81_soft.sol'
+

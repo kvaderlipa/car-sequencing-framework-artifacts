@@ -1,0 +1,149 @@
+Start SOLVER Wed 09/23/2026  6:59:06.89  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Warning: Numeric variable name in LP file ('0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\Ranyu10_500_10_25_01_hard.lp
+Reading time = 0.12 seconds
+OBJ: 5503 rows, 12501 columns, 207156 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 5503 rows, 12501 columns and 207156 nonzeros
+Model fingerprint: 0x441bda76
+Variable types: 1 continuous, 12500 integer (12500 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 6e+01]
+Presolve removed 0 rows and 1 columns
+Presolve time: 0.36s
+Presolved: 5503 rows, 12500 columns, 207654 nonzeros
+Variable types: 0 continuous, 12500 integer (12500 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.03s
+
+Solved with primal simplex
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root relaxation: objective 0.000000e+00, 7106 iterations, 1.03 seconds (0.80 work units)
+Total elapsed time = 6.92s (DegenMoves)
+Total elapsed time = 14.70s (DegenMoves)
+Total elapsed time = 22.31s (DegenMoves)
+Total elapsed time = 25.27s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  910          -    0.00000      -     -   28s
+     0     0    0.00000    0 1352          -    0.00000      -     -   34s
+     0     0    0.00000    0 1302          -    0.00000      -     -   35s
+     0     0    0.00000    0  765          -    0.00000      -     -   67s
+     0     0    0.00000    0  727          -    0.00000      -     -   68s
+     0     0    0.00000    0  700          -    0.00000      -     -   85s
+     0     0    0.00000    0  844          -    0.00000      -     -   87s
+     0     0    0.00000    0  604          -    0.00000      -     -  117s
+     0     0    0.00000    0  740          -    0.00000      -     -  118s
+     0     0    0.00000    0  650          -    0.00000      -     -  147s
+     0     0    0.00000    0  673          -    0.00000      -     -  148s
+     0     0    0.00000    0  599          -    0.00000      -     -  176s
+     0     0    0.00000    0  599          -    0.00000      -     -  186s
+     0     2    0.00000    0  508          -    0.00000      -     -  241s
+     3     8    0.00000    2  983          -    0.00000      -  9513  256s
+    15    24    0.00000    4  854          -    0.00000      -  3794  261s
+    47    59    0.00000    8  863          -    0.00000      -  2135  275s
+   144   343    0.00000   21  844          -    0.00000      -  1152  284s
+   343   609    0.00000   46  827          -    0.00000      -   878  306s
+   615   985    0.00000   80  863          -    0.00000      -   848  330s
+  1005  1124    0.00000  124  684          -    0.00000      -   993  354s
+  1247  1194 infeasible  146               -    0.00000      -  1231  383s
+  1369  1322 infeasible  150               -    0.00000      -  1447  425s
+  1575  1418    0.00000  153  658          -    0.00000      -  1625  461s
+  1805  1494    0.00000  170  653          -    0.00000      -  1807  500s
+  2017  1579    0.00000  154  464          -    0.00000      -  1929  541s
+  2240  1613 infeasible  171               -    0.00000      -  2135  600s
+  2510  1659    0.00000  118  631          -    0.00000      -  2177  651s
+  2714  1749    0.00000  142  456          -    0.00000      -  2307  705s
+  3015  1750    0.00000  138  599          -    0.00000      -  2354  719s
+  3017  1751    0.00000  182 1250          -    0.00000      -  2353  762s
+  3018  1752    0.00000  128 1039          -    0.00000      -  2352  808s
+  3019  1753    0.00000   18 1350          -    0.00000      -  2351  812s
+  3020  1753    0.00000   90  786          -    0.00000      -  2350  849s
+  3021  1754    0.00000  179 1164          -    0.00000      -  2350  853s
+  3022  1755    0.00000  160  715          -    0.00000      -  2349  882s
+  3023  1755    0.00000   73  909          -    0.00000      -  2348  885s
+  3024  1756    0.00000  163  842          -    0.00000      -  2347  919s
+  3025  1757    0.00000  159 1156          -    0.00000      -  2346  923s
+  3026  1757    0.00000   93  676          -    0.00000      -  2346  959s
+  3027  1758    0.00000   77 1316          -    0.00000      -  2345  963s
+  3028  1759    0.00000   54  595          -    0.00000      -  2344  991s
+  3029  1759    0.00000   80  885          -    0.00000      -  2343  995s
+  3030  1760    0.00000   87  667          -    0.00000      -  2343 1034s
+  3031  1761    0.00000  148  858          -    0.00000      -  2342 1037s
+  3032  1761    0.00000   98  668          -    0.00000      -  2341 1071s
+  3033  1762    0.00000  159  811          -    0.00000      -  2340 1075s
+  3034  1763    0.00000  113  608          -    0.00000      -  2339 1100s
+  3036  1764    0.00000  128  611          -    0.00000      -  2338 1135s
+  3037  1765    0.00000  157  611          -    0.00000      -  2337 1145s
+  3038  1765    0.00000  186  611          -    0.00000      -  2336 1184s
+  3039  1769    0.00000   10  556          -    0.00000      -   286 1207s
+  3041  1772    0.00000   11  640          -    0.00000      -   287 1210s
+  3053  1784    0.00000   13  593          -    0.00000      -   294 1216s
+  3093  1811    0.00000   18  599          -    0.00000      -   301 1220s
+  3121  1884    0.00000   21  630          -    0.00000      -   305 1225s
+  3183  1979    0.00000   28  716          -    0.00000      -   312 1232s
+  3300  2146    0.00000   35  698          -    0.00000      -   331 1247s
+  3510  2425    0.00000   58  695          -    0.00000      -   366 1271s
+  3859  2658    0.00000   87 1069          -    0.00000      -   433 1304s
+  4230  2690    0.00000  133  740          -    0.00000      -   554 1343s
+  4440  2722    0.00000  147  569          -    0.00000      -   656 1379s
+  4616  2698    0.00000  156  554          -    0.00000      -   757 1423s
+  4805  2689    0.00000   46  702          -    0.00000      -   856 1470s
+  4996  2726    0.00000  100 1100          -    0.00000      -   934 1517s
+  5312  2742    0.00000  119  842          -    0.00000      -   992 1573s
+  5720  2765    0.00000  138  706          -    0.00000      -  1042 1631s
+  6123  2778 infeasible  162               -    0.00000      -  1103 1706s
+  6452  2802    0.00000  172  419          -    0.00000      -  1191 1776s
+  6934  2752    0.00000  176  372          -    0.00000      -  1243 1849s
+  7461  2641    0.00000  182  369          -    0.00000      -  1290 1914s
+  8100  2461 infeasible  187               -    0.00000      -  1325 1981s
+  8794  2416    0.00000  192  379          -    0.00000      -  1356 2425s
+  9368  2444    0.00000  178  385          -    0.00000      -  1383 2511s
+ 10249  2466 infeasible  195               -    0.00000      -  1409 2591s
+ 11110  2503 infeasible  204               -    0.00000      -  1436 2677s
+ 12023  2577 infeasible  203               -    0.00000      -  1456 2769s
+ 12966  2602    0.00000  222  414          -    0.00000      -  1469 2862s
+ 13986  2618 infeasible  218               -    0.00000      -  1477 2960s
+ 14964  2581    0.00000  212  375          -    0.00000      -  1491 3075s
+ 15933  2524 infeasible  187               -    0.00000      -  1509 3189s
+ 16693  2555 infeasible  184               -    0.00000      -  1533 3600s
+
+Cutting planes:
+  Gomory: 2
+  Clique: 157
+  MIR: 3
+  Flow cover: 110
+  Zero half: 92
+
+Explored 17386 nodes (34255703 simplex iterations) in 3600.30 seconds (4383.14 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 0.000000000000e+00, gap -
+
+Unable to retrieve attribute 'X'
+

@@ -1,0 +1,6 @@
+Figure X: Comparison of Objective 1 solved with Gurobi using eight threads and a single thread across five datasets. The y-axis reports the number of color changes and the x-axis shows computation time in seconds. The convergence trajectories are comparable across all instances, with no consistent advantage of multi-threaded runs over single-threaded runs.
+
+
+toto mozno do textu, mozno do diskusie,,, lebo ak bezis na jednom threade, tak setris resourcy, priridu a mozes mat aj licencing lacnejsi, najma cloud
+
+This observation has practical implications for deployment, as restricting the number of solver threads may reduce computational resource usage without affecting solution quality for the considered instances.

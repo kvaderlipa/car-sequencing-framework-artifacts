@@ -1,0 +1,88 @@
+Start SOLVER Fri 09/18/2026 17:36:36.27  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\carseq_100_8_20_71_soft.lp
+Reading time = 0.02 seconds
+OBJ: 902 rows, 2782 columns, 19616 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 902 rows, 2782 columns and 19616 nonzeros
+Model fingerprint: 0xf0a3d78d
+Variable types: 782 continuous, 2000 integer (2000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 7e+00]
+Found heuristic solution: objective 148.0000000
+Presolve time: 0.03s
+Presolved: 902 rows, 2782 columns, 19616 nonzeros
+Variable types: 0 continuous, 2782 integer (2000 binary)
+
+Root relaxation: objective 0.000000e+00, 1754 iterations, 0.15 seconds (0.15 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  340  148.00000    0.00000   100%     -    0s
+H    0     0                      50.0000000    0.00000   100%     -    0s
+H    0     0                      49.0000000    0.00000   100%     -    0s
+H    0     0                      48.0000000    0.00000   100%     -    0s
+H    0     0                      43.0000000    0.00000   100%     -    0s
+     0     0    0.00000    0  370   43.00000    0.00000   100%     -    1s
+H    0     0                      18.0000000    0.00000   100%     -    1s
+     0     0    0.00000    0  253   18.00000    0.00000   100%     -    2s
+     0     0    0.00000    0  265   18.00000    0.00000   100%     -    3s
+     0     0    0.00000    0  242   18.00000    0.00000   100%     -    3s
+H    0     0                      16.0000000    0.00000   100%     -    3s
+     0     0    0.00000    0  225   16.00000    0.00000   100%     -    4s
+     0     0    0.00000    0  230   16.00000    0.00000   100%     -    4s
+     0     0    0.00000    0  171   16.00000    0.00000   100%     -    4s
+     0     0    0.00000    0  237   16.00000    0.00000   100%     -    4s
+     0     0    0.00000    0  210   16.00000    0.00000   100%     -    5s
+     0     0    0.00000    0  282   16.00000    0.00000   100%     -    5s
+     0     0    0.00000    0  220   16.00000    0.00000   100%     -    6s
+H    0     0                      15.0000000    0.00000   100%     -    6s
+H    0     0                       2.9999991    0.00000   100%     -    6s
+     0     0    0.00000    0  194    3.00000    0.00000   100%     -    6s
+     0     0    0.00000    0   91    3.00000    0.00000   100%     -    6s
+     0     0    0.00000    0   42    3.00000    0.00000   100%     -    7s
+H    0     0                       1.0000000    0.00000   100%     -    7s
+     0     0    0.00000    0   29    1.00000    0.00000   100%     -    7s
+     0     0    0.00000    0  320    1.00000    0.00000   100%     -    8s
+     0     0    0.00000    0  437    1.00000    0.00000   100%     -    8s
+     0     0    0.00000    0  424    1.00000    0.00000   100%     -    8s
+     0     0    0.00000    0  314    1.00000    0.00000   100%     -   10s
+     0     0    0.00000    0  323    1.00000    0.00000   100%     -   10s
+     0     0    0.00000    0  371    1.00000    0.00000   100%     -   11s
+     0     0    0.00000    0  211    1.00000    0.00000   100%     -   11s
+     0     2    0.00000    0  211    1.00000    0.00000   100%     -   12s
+   106   139    0.00000   13  262    1.00000    0.00000   100%   470   15s
+   345   426    0.00000   38  117    1.00000    0.00000   100%   402   21s
+*  595   426              37       0.0000000    0.00000  0.00%   325   21s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 1
+  Clique: 168
+  MIR: 9
+  Zero half: 28
+
+Explored 1262 nodes (424300 simplex iterations) in 21.86 seconds (24.19 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 0 1 3 ... 50
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\carseq_100_8_20_71_soft.sol'
+

@@ -1,0 +1,147 @@
+Set parameter TimeLimit to value 10800
+Set parameter Method to value 2
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Set parameter Threads to value 1
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file 20260313_76x1222_4.lp
+Reading time = 1.11 seconds
+: 25976 rows, 108746 columns, 2293239 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 25976 rows, 108746 columns and 2293239 nonzeros
+Model fingerprint: 0x1ee3b2bb
+Variable types: 15874 continuous, 92872 integer (92872 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 4889 rows and 4926 columns (presolve time = 5s) ...
+Presolve removed 4889 rows and 4926 columns
+Presolve time: 6.97s
+Presolved: 21087 rows, 103820 columns, 1917549 nonzeros
+Variable types: 0 continuous, 103820 integer (92831 binary)
+Root barrier log...
+
+Ordering time: 0.42s
+
+Barrier statistics:
+ Dense cols : 1
+ AA' NZ     : 1.779e+06
+ Factor NZ  : 2.725e+06 (roughly 70 MB of memory)
+ Factor Ops : 3.763e+08 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   1.04929627e+07 -4.49728982e+05  3.21e+05 9.15e-01  3.15e+02    10s
+   1   6.29922837e+06 -5.78842645e+05  1.82e+05 2.01e+00  1.80e+02    10s
+   2   3.43663352e+06 -6.41674601e+05  9.24e+04 6.05e-01  9.18e+01    11s
+   3   1.53018467e+06 -5.07872408e+05  3.72e+04 1.92e-01  3.78e+01    11s
+   4   3.53640705e+05 -2.83297246e+05  5.15e+03 5.04e-03  6.48e+00    11s
+   5   1.60728986e+05 -1.12563141e+05  2.19e+03 2.89e-15  2.63e+00    12s
+   6   1.01821911e+05 -6.72518902e+04  1.35e+03 2.47e-15  1.58e+00    12s
+   7   4.45418393e+04 -3.20553364e+04  5.60e+02 2.64e-15  6.74e-01    12s
+   8   7.81493777e+03 -1.38152013e+04  7.27e+01 3.22e-15  1.45e-01    12s
+   9   4.25442896e+03 -6.59764635e+03  2.93e+01 2.70e-15  6.87e-02    13s
+  10   1.54756934e+03 -3.51502278e+03  7.29e+00 2.80e-15  2.82e-02    13s
+  11   3.44583160e+02 -9.46797916e+02  1.37e+00 3.37e-15  6.34e-03    13s
+  12   1.10343682e+02 -2.47223416e+02  2.39e-01 3.06e-15  1.62e-03    13s
+  13   7.17332828e+01 -6.86370045e+01  6.52e-02 2.58e-15  6.22e-04    14s
+  14   5.83821114e+01  2.81312048e+01  4.69e-03 3.00e-15  1.33e-04    14s
+  15   5.70724139e+01  5.46179371e+01  1.29e-04 3.18e-15  1.08e-05    14s
+  16   5.70004348e+01  5.69730750e+01  6.97e-07 3.69e-15  1.20e-07    14s
+  17   5.70000015e+01  5.69999731e+01  5.15e-10 1.28e-14  1.25e-10    15s
+  18   5.70000000e+01  5.70000000e+01  1.04e-13 1.68e-14  1.25e-13    15s
+
+Barrier solved model in 18 iterations and 14.84 seconds (13.14 work units)
+Optimal objective 5.70000000e+01
+
+  Building initial crossover basis                                20s
+  Building initial crossover basis                                25s
+  Building initial crossover basis                                30s
+  Building initial crossover basis                                35s
+  Building initial crossover basis                                40s
+  Building initial crossover basis                                45s
+  Building initial crossover basis                                50s
+  Building initial crossover basis                                55s
+  Building initial crossover basis                                60s
+  Building initial crossover basis                                65s
+  Building initial crossover basis                                70s
+
+Root crossover log...
+
+    1242 DPushes remaining with DInf 0.0000000e+00                73s
+       0 DPushes remaining with DInf 0.0000000e+00                73s
+
+   91440 PPushes remaining with PInf 0.0000000e+00                73s
+   81813 PPushes remaining with PInf 1.2079879e-06                75s
+   64792 PPushes remaining with PInf 0.0000000e+00                80s
+   38398 PPushes remaining with PInf 6.2366100e-04                85s
+   11088 PPushes remaining with PInf 0.0000000e+00                91s
+       0 PPushes remaining with PInf 0.0000000e+00                93s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 7.9784961e-12     93s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   92685    5.7000000e+01   0.000000e+00   0.000000e+00     93s
+   92685    5.7000000e+01   0.000000e+00   0.000000e+00     93s
+
+Root relaxation: objective 5.700000e+01, 92685 iterations, 84.94 seconds (74.43 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   57.00000    0 13081          -   57.00000      -     -  614s
+     0     0   57.00000    0 12681          -   57.00000      -     - 2019s
+     0     0   57.43295    0 12048          -   57.43295      -     - 3676s
+     0     0   57.43295    0 11619          -   57.43295      -     - 4434s
+     0     0   57.43295    0 11829          -   57.43295      -     - 4442s
+     0     0   57.43295    0 11698          -   57.43295      -     - 4574s
+     0     0   57.43295    0 11673          -   57.43295      -     - 4584s
+     0     0   57.43295    0 11444          -   57.43295      -     - 5623s
+     0     0   57.43295    0 11450          -   57.43295      -     - 5638s
+     0     0   57.43295    0 11384          -   57.43295      -     - 6266s
+     0     0   57.43295    0 11462          -   57.43295      -     - 6282s
+     0     0   57.43295    0 11417          -   57.43295      -     - 7401s
+     0     0   57.43295    0 11489          -   57.43295      -     - 7414s
+     0     0   57.43295    0 11391          -   57.43295      -     - 8420s
+     0     0   57.43295    0 11391          -   57.43295      -     - 8575s
+H    0     0                    3595.0000000   57.43295  98.4%     - 8736s
+H    0     0                     433.0000000   57.43295  86.7%     - 8834s
+H    0     0                     398.0000000   57.43295  85.6%     - 8837s
+     0     2   57.43295    0 11391  398.00000   57.43295  85.6%     - 9394s
+     1     3   57.44005    1 11383  398.00000   57.43295  85.6% 56524 9413s
+     2     4   57.43295    1 11513  398.00000   57.43295  85.6% 28885 9421s
+     3     5   57.43295    2 11431  398.00000   57.43295  85.6% 19893 9447s
+     4     6   57.43295    3 11436  398.00000   57.43295  85.6% 15701 9465s
+     5     7   57.43295    4 11438  398.00000   57.43295  85.6% 12777 9471s
+     6     8   57.43295    5 11472  398.00000   57.43295  85.6% 10869 9845s
+     7     9   57.43295    6 11452  398.00000   57.43295  85.6%  9494 9853s
+     8    10   57.43295    7 11397  398.00000   57.43295  85.6%  8421 10440s
+     9    11   57.46706    8 11189  398.00000   57.43295  85.6%  9323 10800s
+
+Cutting planes:
+  MIR: 369
+  Zero half: 8
+
+Explored 10 nodes (1585593 simplex iterations) in 10800.20 seconds (9260.67 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 3: 398 433 3595 
+
+Time limit reached
+Best objective 3.980000000000e+02, best bound 5.800000000000e+01, gap 85.4271%
+
+Wrote result file '20260313_76x1222_4_GUROBI_1_THREAD_BARRIER.sol'
+

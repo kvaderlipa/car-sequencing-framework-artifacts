@@ -1,0 +1,66 @@
+Start SOLVER Thu 09/17/2026 14:21:18.11  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Warning: Numeric variable name in LP file ('0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\10-93_hard.lp
+Reading time = 0.02 seconds
+OBJ: 612 rows, 2501 columns, 25778 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 612 rows, 2501 columns and 25778 nonzeros
+Model fingerprint: 0xa43832f2
+Variable types: 1 continuous, 2500 integer (2500 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Presolve removed 0 rows and 1 columns
+Presolve time: 0.03s
+Presolved: 612 rows, 2500 columns, 25778 nonzeros
+Variable types: 0 continuous, 2500 integer (2500 binary)
+
+Root relaxation: objective 0.000000e+00, 3446 iterations, 0.37 seconds (0.47 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  184          -    0.00000      -     -    1s
+     0     0    0.00000    0  445          -    0.00000      -     -    1s
+     0     0    0.00000    0  421          -    0.00000      -     -    1s
+     0     0    0.00000    0  320          -    0.00000      -     -    3s
+     0     0    0.00000    0  337          -    0.00000      -     -    3s
+     0     0    0.00000    0  379          -    0.00000      -     -    5s
+     0     0    0.00000    0  409          -    0.00000      -     -    5s
+     0     0    0.00000    0  313          -    0.00000      -     -    6s
+     0     0    0.00000    0  313          -    0.00000      -     -    7s
+     0     2    0.00000    0  306          -    0.00000      -     -   11s
+    45    10 infeasible   10               -    0.00000      -  1780   15s
+
+Cutting planes:
+  Gomory: 4
+  Clique: 80
+  MIR: 8
+  Inf proof: 4
+  Zero half: 64
+
+Explored 53 nodes (142820 simplex iterations) in 15.19 seconds (17.90 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Unable to retrieve attribute 'X'
+

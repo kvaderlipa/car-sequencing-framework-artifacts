@@ -1,0 +1,91 @@
+Start SOLVER Mon 09/21/2026  1:52:02.84  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Warning: Numeric variable name in LP file ('0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\pb_400_10_hard.lp
+Reading time = 0.07 seconds
+OBJ: 2412 rows, 10001 columns, 108530 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 2412 rows, 10001 columns and 108530 nonzeros
+Model fingerprint: 0xe624bef1
+Variable types: 1 continuous, 10000 integer (10000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 6e+01]
+Presolve removed 0 rows and 1 columns
+Presolve time: 0.16s
+Presolved: 2412 rows, 10000 columns, 108530 nonzeros
+Variable types: 0 continuous, 10000 integer (10000 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Warning: Markowitz tolerance tightened to 0.0625
+Concurrent spin time: 0.06s
+
+Solved with primal simplex
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root relaxation: objective 0.000000e+00, 4860 iterations, 0.45 seconds (0.32 work units)
+Total elapsed time = 5.61s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  536          -    0.00000      -     -    8s
+     0     0    0.00000    0  850          -    0.00000      -     -    9s
+     0     0    0.00000    0  832          -    0.00000      -     -   10s
+     0     0    0.00000    0  517          -    0.00000      -     -   22s
+     0     0    0.00000    0  539          -    0.00000      -     -   23s
+     0     0    0.00000    0  308          -    0.00000      -     -   38s
+     0     0    0.00000    0  489          -    0.00000      -     -   39s
+     0     0    0.00000    0  265          -    0.00000      -     -   56s
+     0     0    0.00000    0  460          -    0.00000      -     -   57s
+     0     0    0.00000    0  211          -    0.00000      -     -   68s
+     0     0    0.00000    0  236          -    0.00000      -     -   68s
+     0     0    0.00000    0  272          -    0.00000      -     -   73s
+     0     0    0.00000    0  237          -    0.00000      -     -   74s
+     0     0    0.00000    0  115          -    0.00000      -     -   83s
+     0     0    0.00000    0  126          -    0.00000      -     -   84s
+     0     0    0.00000    0  107          -    0.00000      -     -   88s
+     0     0    0.00000    0  107          -    0.00000      -     -   91s
+     0     2    0.00000    0  107          -    0.00000      -     -  115s
+     3     8    0.00000    2  366          -    0.00000      -  7148  131s
+    15    24    0.00000    4  312          -    0.00000      -  2762  135s
+    60    77    0.00000    9  276          -    0.00000      -  1782  146s
+    76   114    0.00000   11  216          -    0.00000      -  5086  156s
+   113   216    0.00000   14  468          -    0.00000      -  4019  166s
+   217   556    0.00000   21  152          -    0.00000      -  3669  186s
+   630   794    0.00000   72  308          -    0.00000      -  2939  232s
+  1051  1177    0.00000   94  235          -    0.00000      -  2779  261s
+* 1686   815             108       0.0000000    0.00000  0.00%  2662  261s
+
+Cutting planes:
+  Gomory: 2
+  Clique: 107
+  MIR: 11
+  Zero half: 73
+
+Explored 1694 nodes (4856075 simplex iterations) in 261.35 seconds (313.28 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\pb_400_10_hard.sol'
+

@@ -1,0 +1,81 @@
+SCIP version 10.0.0 [precision: 8 byte] [memory: block] [mode: optimized] [LP solver: SoPlex 8.0.0] [GitHash: f92057fe19]
+Copyright (c) 2002-2025 Zuse Institute Berlin (ZIB)
+
+External libraries: 
+  SoPlex 8.0.0         Linear programming solver developed at Zuse Institute Berlin (soplex.zib.de) [GitHash: e45a724a]
+  CppAD 20180000.0     Algorithmic Differentiation of C++ algorithms developed by B. Bell (github.com/coin-or/CppAD)
+  ZLIB 1.3.1           General purpose compression library by J. Gailly and M. Adler (zlib.net)
+  MPFR 4.2.2           GNU Multiple Precision Floating-Point Reliable Library (mpfr.org)
+  Boost 1.89.0         Boost C++ Libraries (boost.org)
+  TinyCThread 1.2      small portable implementation of the C11 threads API (tinycthread.github.io)
+  GMP 6.3.0            GNU Multiple Precision Arithmetic Library developed by T. Granlund (gmplib.org)
+  ZIMPL 3.7.0          Zuse Institute Mathematical Programming Language developed by T. Koch (zimpl.zib.de)
+  AMPL/MP 4.0.3        AMPL .nl file reader library (github.com/ampl/mp)
+  PaPILO 3.0.0         parallel presolve for integer and linear optimization (github.com/scipopt/papilo) (built with TBB) [GitHash: 678cd760]
+  Nauty 2.8.8          Computing Graph Automorphism Groups by Brendan D. McKay (users.cecs.anu.edu.au/~bdm/nauty)
+  sassy 2.0            Symmetry preprocessor by Markus Anders (github.com/markusa4/sassy)
+  Ipopt 3.14.19        Interior Point Optimizer developed by A. Waechter et.al. (github.com/coin-or/Ipopt)
+
+user parameter file <scip.set> not found - using default parameters
+
+
+read problem <20260313_76x1222_2.lp>
+============
+
+original problem has 94094 variables (92872 bin, 0 int, 1222 cont) and 25976 constraints
+limits/time = 350000
+
+presolving:
+   (2.0s) running MILP presolver
+   (3.0s) MILP presolver (2 rounds): 0 aggregations, 0 fixings, 1221 bound changes
+(round 1, medium)     41 del vars, 2 del conss, 0 add conss, 1263 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 2 impls, 5499 clqs, 0 implints
+(round 2, exhaustive) 41 del vars, 4 del conss, 0 add conss, 1263 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 2 impls, 5499 clqs, 1222 implints
+(round 3, exhaustive) 41 del vars, 4 del conss, 0 add conss, 1263 chg bounds, 0 chg sides, 0 chg coeffs, 8878 upgd conss, 2 impls, 5499 clqs, 1222 implints
+(round 4, medium)     41 del vars, 5 del conss, 10 add conss, 1263 chg bounds, 10 chg sides, 410 chg coeffs, 8878 upgd conss, 1222 impls, 5508 clqs, 1222 implints
+   (7.0s) sparsify aborted: 82/1272186 (0.0%) nonzeros canceled - in total 82 canceled nonzeros, 82 changed coefficients, 0 added nonzeros
+   (8.0s) probing: 51/92831 (0.1%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (8.0s) probing aborted: 50/50 successive totally useless probings
+   (9.0s) symmetry computation started: requiring (bin +, int +, cont +), (fixed: bin -, int -, cont -)
+   (9.0s) no symmetry present (symcode time: 0.00)
+presolving (5 rounds: 5 fast, 5 medium, 3 exhaustive):
+ 41 deleted vars, 5 deleted constraints, 10 added constraints, 1263 tightened bounds, 0 added holes, 10 changed sides, 492 changed coefficients
+ 1222 implications, 5508 cliques, 1222 implied integral variables (0 bin, 0 int, 1222 cont)
+presolved problem has 94053 variables (92831 bin, 0 int, 1222 cont) and 25981 constraints
+   1221 constraints of type <varbound>
+   2501 constraints of type <knapsack>
+   4899 constraints of type <setppc>
+  17095 constraints of type <linear>
+    265 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 8.00
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+ 1550s|     1 |     0 |148399 |     - |  1207M |   0 |  94k|  26k|  25k|   0 |  0 | 208 |   0 | 3.246973e-02 |      --      |    Inf | unknown
+ 2204s|     1 |     0 |191493 |     - |  1303M |   0 |  94k|  26k|  26k|  32 |  1 | 208 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+ 3689s|     1 |     0 |274441 |     - |  1336M |   0 |  94k|  26k|  26k|  62 |  2 | 208 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+ 6600s|     1 |     0 |455206 |     - |  1376M |   0 |  94k|  26k|  26k| 147 |  3 | 208 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+ 9228s|     1 |     0 |626470 |     - |  1387M |   0 |  94k|  26k|  26k| 192 |  4 | 208 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+ 9643s|     1 |     0 |655121 |     - |  1403M |   0 |  94k|  26k|  26k| 238 |  5 | 208 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  447m|     1 |     0 |  1972k|     - |  1426M |   0 |  94k|  26k|  26k| 308 |  6 | 208 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  495m|     1 |     0 |  2171k|     - |  1443M |   0 |  94k|  26k|  26k| 330 |  7 | 208 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  562m|     1 |     0 |  2445k|     - |  1458M |   0 |  94k|  26k|  26k| 355 |  8 | 211 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  624m|     1 |     0 |  2668k|     - |  1478M |   0 |  94k|  26k|  26k| 400 |  9 | 211 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  668m|     1 |     0 |  2832k|     - |  1487M |   0 |  94k|  26k|  26k| 419 | 10 | 211 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  677m|     1 |     0 |  2866k|     - |  1497M |   0 |  94k|  26k|  26k| 440 | 11 | 211 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  739m|     1 |     0 |  3101k|     - |  1510M |   0 |  94k|  26k|  26k| 465 | 12 | 211 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  803m|     1 |     0 |  3357k|     - |  1519M |   0 |  94k|  26k|  26k| 488 | 13 | 211 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  919m|     1 |     2 |  3526k|     - |  1523M |   0 |  94k|  26k|  26k| 488 | 13 | 211 |  28 | 1.000000e+00 |      --      |    Inf | unknown
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 350000.00
+Solving Nodes      : 15
+Primal Bound       : +1.00000000000000e+20 (0 solutions)
+Dual Bound         : +1.00000000000295e+00
+Gap                : infinite
+
+
+solution status: time limit reached
+no solution available
+written solution information to file <20260313_76x1222_2.sol>
+
+

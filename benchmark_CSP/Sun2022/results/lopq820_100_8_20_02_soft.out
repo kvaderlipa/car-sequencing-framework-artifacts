@@ -1,0 +1,80 @@
+Start SOLVER Mon 09/21/2026 10:18:59.35  
+Set parameter TimeLimit to value 3600
+Set parameter Heuristics to value 0.5
+Set parameter LogFile to value "gurobi.log"
+Using license file c:\gurobi\gurobi.lic
+
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows Server 2016.0 (14393.2))
+Copyright (c) 2024, Gurobi Optimization, LLC
+
+Read LP format model from file C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\lopq820_100_8_20_02_soft.lp
+Reading time = 0.04 seconds
+OBJ: 895 rows, 2775 columns, 29737 nonzeros
+
+CPU model: Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz, instruction set [SSE2]
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 895 rows, 2775 columns and 29737 nonzeros
+Model fingerprint: 0x5656859f
+Variable types: 775 continuous, 2000 integer (2000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+01]
+Found heuristic solution: objective 213.0000000
+Presolve time: 0.06s
+Presolved: 895 rows, 2775 columns, 29737 nonzeros
+Variable types: 0 continuous, 2775 integer (2000 binary)
+
+Root relaxation: objective 0.000000e+00, 1695 iterations, 0.16 seconds (0.19 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  278  213.00000    0.00000   100%     -    0s
+H    0     0                     110.0000000    0.00000   100%     -    0s
+H    0     0                      91.0000000    0.00000   100%     -    0s
+H    0     0                      82.0000000    0.00000   100%     -    0s
+H    0     0                      81.0000000    0.00000   100%     -    0s
+H    0     0                      68.0000000    0.00000   100%     -    1s
+     0     0    0.00000    0  269   68.00000    0.00000   100%     -    1s
+     0     0    0.00000    0  263   68.00000    0.00000   100%     -    1s
+H    0     0                      37.0000000    0.00000   100%     -    2s
+     0     0    0.00000    0   91   37.00000    0.00000   100%     -    2s
+H    0     0                      25.0000000    0.00000   100%     -    3s
+     0     0    0.00000    0   95   25.00000    0.00000   100%     -    3s
+     0     0    0.00000    0  124   25.00000    0.00000   100%     -    4s
+H    0     0                      24.0000000    0.00000   100%     -    4s
+     0     0    0.00000    0  117   24.00000    0.00000   100%     -    4s
+     0     0    0.00000    0  110   24.00000    0.00000   100%     -    5s
+     0     0    0.00000    0  103   24.00000    0.00000   100%     -    5s
+H    0     0                      22.0000000    0.00000   100%     -    5s
+H    0     0                      16.0000000    0.00000   100%     -    5s
+H    0     0                      15.0000000    0.00000   100%     -    5s
+H    0     0                      12.0000000    0.00000   100%     -    6s
+H    0     2                      10.0000000    0.00000   100%     -    8s
+     0     2    0.00000    0  103   10.00000    0.00000   100%     -    8s
+H    4     8                       9.0000000    0.00000   100%  1116    9s
+H   31    40                       5.0000000    0.00000   100%   606   11s
+   104   226    0.00000   11  155    5.00000    0.00000   100%   899   16s
+H  148   226                       4.0000000    0.00000   100%   805   16s
+   225   461    0.00000   22  247    4.00000    0.00000   100%   758   20s
+H  460   690                       2.0000000    0.00000   100%   716   31s
+   690  1517    0.00000   50  243    2.00000    0.00000   100%   630   42s
+H  785  1274                       0.0000000    0.00000  0.00%   607   42s
+
+Cutting planes:
+  MIR: 13
+  Zero half: 31
+
+Explored 1649 nodes (866440 simplex iterations) in 42.19 seconds (58.99 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 0 2 4 ... 22
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'C:\gurobi\1103\win64\bin\lubos_test_models\benchmark_CSP_Sun2022\\lopq820_100_8_20_02_soft.sol'
+

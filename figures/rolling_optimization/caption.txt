@@ -1,0 +1,1 @@
+Figure X: Comparison of a single uninterrupted optimization run and a rolling optimization strategy composed of successive 1000-second runs for Objective 1 across five datasets. In the rolling strategy, each run is initialized with the best solution obtained in the previous run. The resulting convergence trajectories are indistinguishable across all instances.

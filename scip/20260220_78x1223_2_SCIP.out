@@ -1,0 +1,75 @@
+SCIP version 10.0.0 [precision: 8 byte] [memory: block] [mode: optimized] [LP solver: SoPlex 8.0.0] [GitHash: f92057fe19]
+Copyright (c) 2002-2025 Zuse Institute Berlin (ZIB)
+
+External libraries: 
+  SoPlex 8.0.0         Linear programming solver developed at Zuse Institute Berlin (soplex.zib.de) [GitHash: e45a724a]
+  CppAD 20180000.0     Algorithmic Differentiation of C++ algorithms developed by B. Bell (github.com/coin-or/CppAD)
+  ZLIB 1.3.1           General purpose compression library by J. Gailly and M. Adler (zlib.net)
+  MPFR 4.2.2           GNU Multiple Precision Floating-Point Reliable Library (mpfr.org)
+  Boost 1.89.0         Boost C++ Libraries (boost.org)
+  TinyCThread 1.2      small portable implementation of the C11 threads API (tinycthread.github.io)
+  GMP 6.3.0            GNU Multiple Precision Arithmetic Library developed by T. Granlund (gmplib.org)
+  ZIMPL 3.7.0          Zuse Institute Mathematical Programming Language developed by T. Koch (zimpl.zib.de)
+  AMPL/MP 4.0.3        AMPL .nl file reader library (github.com/ampl/mp)
+  PaPILO 3.0.0         parallel presolve for integer and linear optimization (github.com/scipopt/papilo) (built with TBB) [GitHash: 678cd760]
+  Nauty 2.8.8          Computing Graph Automorphism Groups by Brendan D. McKay (users.cecs.anu.edu.au/~bdm/nauty)
+  sassy 2.0            Symmetry preprocessor by Markus Anders (github.com/markusa4/sassy)
+  Ipopt 3.14.19        Interior Point Optimizer developed by A. Waechter et.al. (github.com/coin-or/Ipopt)
+
+user parameter file <scip.set> not found - using default parameters
+
+
+read problem <20260220_78x1223_2.lp>
+============
+
+original problem has 96616 variables (95394 bin, 0 int, 1222 cont) and 19913 constraints
+limits/time = 350000
+
+presolving:
+(round 1, fast)       1434 del vars, 4 del conss, 0 add conss, 1434 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4621 clqs, 0 implints
+(round 2, fast)       1434 del vars, 277 del conss, 0 add conss, 1434 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4621 clqs, 0 implints
+(round 3, fast)       1434 del vars, 277 del conss, 0 add conss, 2656 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4621 clqs, 1222 implints
+   (2.0s) running MILP presolver
+   (3.0s) MILP presolver found nothing
+(round 4, exhaustive) 1434 del vars, 277 del conss, 0 add conss, 2656 chg bounds, 0 chg sides, 0 chg coeffs, 7416 upgd conss, 0 impls, 4621 clqs, 1222 implints
+(round 5, medium)     1434 del vars, 278 del conss, 10 add conss, 2656 chg bounds, 10 chg sides, 640 chg coeffs, 7416 upgd conss, 0 impls, 4630 clqs, 1222 implints
+   (9.0s) probing: 51/93960 (0.1%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (9.0s) probing aborted: 50/50 successive totally useless probings
+   (9.0s) symmetry computation started: requiring (bin +, int +, cont +), (fixed: bin -, int -, cont -)
+   (10.0s) no symmetry present (symcode time: 0.00)
+presolving (6 rounds: 6 fast, 3 medium, 2 exhaustive):
+ 1434 deleted vars, 278 deleted constraints, 10 added constraints, 2656 tightened bounds, 0 added holes, 10 changed sides, 640 changed coefficients
+ 0 implications, 4630 cliques, 1222 implied integral variables (0 bin, 0 int, 1222 cont)
+presolved problem has 95182 variables (93960 bin, 0 int, 1222 cont) and 19645 constraints
+   2499 constraints of type <knapsack>
+   4631 constraints of type <setppc>
+  12220 constraints of type <linear>
+    295 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 10.00
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+  875s|     1 |     0 | 95648 |     - |  1307M |   0 |  95k|  19k|  19k|   0 |  0 | 183 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 1293s|     1 |     0 |128874 |     - |  1407M |   0 |  95k|  19k|  19k|  30 |  1 | 188 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 1446s|     1 |     0 |142465 |     - |  1422M |   0 |  95k|  19k|  19k|  55 |  2 | 198 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 1592s|     1 |     0 |155017 |     - |  1433M |   0 |  95k|  19k|  19k|  72 |  3 | 208 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 1739s|     1 |     0 |167511 |     - |  1443M |   0 |  95k|  19k|  19k|  89 |  4 | 208 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 1895s|     1 |     0 |181036 |     - |  1448M |   0 |  95k|  19k|  19k| 108 |  5 | 215 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 2039s|     1 |     0 |194220 |     - |  1455M |   0 |  95k|  19k|  19k| 128 |  6 | 225 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 2195s|     1 |     0 |208322 |     - |  1462M |   0 |  95k|  19k|  19k| 149 |  7 | 231 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 2346s|     1 |     0 |221888 |     - |  1469M |   0 |  95k|  19k|  19k| 172 |  8 | 231 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 2510s|     1 |     0 |236140 |     - |  1471M |   0 |  95k|  19k|  19k| 188 |  9 | 231 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 2670s|     1 |     0 |250275 |     - |  1478M |   0 |  95k|  19k|  19k| 212 | 10 | 237 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 2799s|     1 |     0 |263657 |     - |  1489M |   0 |  95k|  19k|  19k| 228 | 11 | 242 |   0 | 7.671849e-03 |      --      |    Inf | unknown
+ 1723m|     1 |     2 |278041 |     - |  1492M |   0 |  95k|  19k|  19k| 228 | 11 | 247 |  35 | 7.671849e-03 |      --      |    Inf | unknown
+ 4096m|   100 |   101 | 10108k|99445.3 |  1685M |  21 |  95k|  20k|  19k|1026 |  1 | 363 |  35 | 7.671849e-03 |      --      |    Inf | unknown
+ 5811m|   200 |   201 | 19004k|94172.9 |  1887M |  21 |  95k|  20k|  20k|3210 |  4 | 412 |  35 | 1.946157e-02 |      --      |    Inf | unknown
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 350000.00
+Solving Nodes      : 201
+Primal Bound       : +1.00000000000000e+20 (0 solutions)
+Dual Bound         : +1.94615744545481e-02
+Gap                : infinite
+
+
